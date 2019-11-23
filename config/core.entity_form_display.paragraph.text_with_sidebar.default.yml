@@ -1,0 +1,82 @@
+uuid: 9b7c69b8-dad2-4665-aca4-6bcdaa7306bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_sidebar.field_para_contacts
+    - field.field.paragraph.text_with_sidebar.field_para_downloads
+    - field.field.paragraph.text_with_sidebar.field_para_penta_icon
+    - field.field.paragraph.text_with_sidebar.field_para_secondary_color
+    - field.field.paragraph.text_with_sidebar.field_para_text
+    - field.field.paragraph.text_with_sidebar.field_para_title
+    - paragraphs.paragraphs_type.text_with_sidebar
+  module:
+    - file
+    - paragraphs
+    - select_or_other
+    - text
+id: paragraph.text_with_sidebar.default
+targetEntityType: paragraph
+bundle: text_with_sidebar
+mode: default
+content:
+  field_para_contacts:
+    type: paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: contact_info
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    region: content
+  field_para_downloads:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_para_penta_icon:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_para_secondary_color:
+    weight: 1
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_para_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

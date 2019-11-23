@@ -1,0 +1,52 @@
+uuid: a4c851b6-8157-4310-81f9-6d4639374b54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_area.field_para_penta_icon
+    - field.field.paragraph.text_area.field_para_secondary_color
+    - field.field.paragraph.text_area.field_para_text
+    - field.field.paragraph.text_area.field_para_title
+    - paragraphs.paragraphs_type.text_area
+  module:
+    - select_or_other
+    - text
+id: paragraph.text_area.default
+targetEntityType: paragraph
+bundle: text_area
+mode: default
+content:
+  field_para_penta_icon:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_para_secondary_color:
+    weight: 1
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_para_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,132 @@
+uuid: ee8ed642-fd6a-4f39-afa8-19f7d4b142ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_para_penta_icon
+field_name: field_para_penta_icon
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: activities
+      label: Activities
+    -
+      value: art-museum
+      label: 'Art Museum'
+    -
+      value: ben-franklin
+      label: 'Ben Franklin'
+    -
+      value: brt
+      label: 'Brandywine Realty Trust'
+    -
+      value: brotherly-love
+      label: 'Brotherly Love'
+    -
+      value: buildings
+      label: Buildings
+    -
+      value: bulletin-building
+      label: 'Bulletin Building'
+    -
+      value: cafe
+      label: Cafe
+    -
+      value: communication
+      label: Communication
+    -
+      value: dining
+      label: Dining
+    -
+      value: drexel
+      label: Drexel
+    -
+      value: eagles
+      label: Eagles
+    -
+      value: education
+      label: Education
+    -
+      value: history
+      label: History
+    -
+      value: hotel-alt
+      label: 'Hotel (alt)'
+    -
+      value: hotel
+      label: Hotel
+    -
+      value: innovation
+      label: Innovation
+    -
+      value: labs
+      label: Labs
+    -
+      value: life-science
+      label: 'Life Science'
+    -
+      value: liberty-bell
+      label: 'Liberty Bell'
+    -
+      value: liberty-place
+      label: 'Liberty Place'
+    -
+      value: office
+      label: Office
+    -
+      value: outdoor
+      label: Outdoor
+    -
+      value: parks
+      label: Parks
+    -
+      value: penn-quaker
+      label: 'Penn Quaker'
+    -
+      value: philly-cheesesteak
+      label: 'Philly Cheesesteak'
+    -
+      value: research-alt
+      label: 'Research (alt)'
+    -
+      value: research
+      label: Research
+    -
+      value: residential
+      label: Residential
+    -
+      value: retail
+      label: Retail
+    -
+      value: rocky
+      label: Rocky
+    -
+      value: schuylkill-river
+      label: 'Schuylkill River'
+    -
+      value: seventy-sixers
+      label: 76ers
+    -
+      value: sy-circle
+      label: 'SY Circle'
+    -
+      value: tech
+      label: Tech
+    -
+      value: thirtieth-st-station
+      label: '30th St Station'
+    -
+      value: travel
+      label: Travel
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

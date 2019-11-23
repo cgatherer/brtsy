@@ -1,0 +1,5 @@
+services:
+  sy_mapping.twig_util:
+      class: Drupal\sy_mapping\TwigExtension\TwigUtil
+      tags:
+        - { name: twig.extension }

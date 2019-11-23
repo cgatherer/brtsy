@@ -1,0 +1,9 @@
+uuid: 3831a7c4-4428-485a-addb-e862df5620b5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Lease Type'
+vid: lease_type
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,8 @@
+sy-mapping:
+    version: VERSION
+    js:
+      sy_mapping.js: {}
+    dependencies:
+      - leaflet/leaflet
+      - core/jquery
+      - core/drupal

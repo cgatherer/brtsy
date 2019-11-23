@@ -1,0 +1,25 @@
+uuid: 1cdd7223-8528-4a1f-8983-63dd7c8c7326
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.hero_small
+  module:
+    - crop
+name: hero_small
+label: 'Hero small'
+effects:
+  19e6aec4-6e5a-4eb5-bd37-56085fabf02d:
+    uuid: 19e6aec4-6e5a-4eb5-bd37-56085fabf02d
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: hero_small
+  38cc5203-91b3-49c5-bbf7-73de231f3829:
+    uuid: 38cc5203-91b3-49c5-bbf7-73de231f3829
+    id: image_scale
+    weight: 2
+    data:
+      width: 1000
+      height: null
+      upscale: false

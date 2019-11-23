@@ -1,0 +1,35 @@
+cdn_provider: ''
+_core:
+  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+favicon:
+  mimetype: image/png
+  path: themes/sy_bootstrap/SY_favicon.png
+  url: 'https://brtsy.lndo.site/themes/sy_bootstrap/favicon.ico'
+  use_default: false
+schemas:
+  bootstrap: 8000
+  sy_bootstrap: 8000
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: false
+table_responsive: '-1'
+table: ''
+breadcrumb: '2'
+region_wells:
+  secondary_menu: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+fluid_container: 1
+logo:
+  path: ''
+  url: ''
+  use_default: true

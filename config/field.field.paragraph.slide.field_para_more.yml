@@ -1,0 +1,23 @@
+uuid: afb30a05-16cb-40a1-8d63-52a96a9aeb07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_more
+    - paragraphs.paragraphs_type.slide
+  module:
+    - link
+id: paragraph.slide.field_para_more
+field_name: field_para_more
+entity_type: paragraph
+bundle: slide
+label: 'Main link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

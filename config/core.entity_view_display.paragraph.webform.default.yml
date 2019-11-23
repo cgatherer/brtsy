@@ -1,0 +1,43 @@
+uuid: 052036fd-b0b1-4d2f-b6dc-b3ff83197d10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform.field_para_color
+    - field.field.paragraph.webform.field_para_penta_icon
+    - field.field.paragraph.webform.field_para_title
+    - field.field.paragraph.webform.field_para_webform
+    - paragraphs.paragraphs_type.webform
+  module:
+    - options
+    - webform
+id: paragraph.webform.default
+targetEntityType: paragraph
+bundle: webform
+mode: default
+content:
+  field_para_penta_icon:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_para_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_para_webform:
+    weight: 2
+    label: hidden
+    settings:
+      source_entity: false
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+hidden:
+  field_para_color: true

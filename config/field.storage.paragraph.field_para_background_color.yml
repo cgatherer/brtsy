@@ -1,0 +1,48 @@
+uuid: 2714f54d-eff6-4633-8d91-520f7ccac0a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_para_background_color
+field_name: field_para_background_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '#859EB4'
+      label: Neutral
+    -
+      value: '#000000'
+      label: Black
+    -
+      value: '#ffffff'
+      label: White
+    -
+      value: '#C40512'
+      label: Red
+    -
+      value: '#0059A8'
+      label: Sapphire
+    -
+      value: '#38B34A'
+      label: Clover
+    -
+      value: '#FCBF12'
+      label: Gold
+    -
+      value: '#00ADED'
+      label: Cerulian
+    -
+      value: '#BD1A8C'
+      label: Raspberry
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,44 @@
+uuid: a695df3f-0551-41d9-92be-c68adf474ecc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event.field_penta_icon
+    - taxonomy.vocabulary.event
+  module:
+    - path
+    - text
+id: taxonomy_term.event.default
+targetEntityType: taxonomy_term
+bundle: event
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_penta_icon:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

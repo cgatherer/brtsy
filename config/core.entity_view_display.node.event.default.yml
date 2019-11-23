@@ -1,0 +1,160 @@
+uuid: aed82a2f-acbc-4988-8fee-85071e3c9277
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_address
+    - field.field.node.event.field_date_range
+    - field.field.node.event.field_event_category
+    - field.field.node.event.field_event_image
+    - field.field.node.event.field_event_links
+    - field.field.node.event.field_featured_category
+    - field.field.node.event.field_geofield
+    - field.field.node.event.field_metatags
+    - field.field.node.event.field_related_events
+    - node.type.event
+    - responsive_image.styles.hero
+  module:
+    - address
+    - address_map_link
+    - datetime_range
+    - leaflet
+    - link
+    - metatag
+    - responsive_image
+    - text
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_address:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      address_map_link:
+        link_address: '1'
+        map_link_type: google_maps
+        map_link_position: before
+        map_link_text: 'Google Maps >'
+        map_link_new_window: '1'
+    type: address_default
+    region: content
+  field_date_range:
+    weight: 4
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_date_time
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_event_category:
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: icon_list
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_event_image:
+    weight: 2
+    label: hidden
+    settings:
+      responsive_image_style: hero
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_event_links:
+    weight: 9
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_geofield:
+    type: leaflet_formatter_default
+    weight: 8
+    region: content
+    label: hidden
+    settings:
+      multiple_map: '0'
+      popup_content: ''
+      leaflet_map: SY-Main
+      height: '200'
+      hide_empty_map: '1'
+      map_position:
+        zoom: '14'
+        minZoom: '1'
+        maxZoom: '18'
+        force: 0
+      icon:
+        iconUrl: ''
+        shadowUrl: ''
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: ''
+          'y': ''
+        shadowSize:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: ''
+          'y': ''
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+      popup: 0
+      disable_wheel: 0
+      leaflet_markercluster:
+        control: 0
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+      fullscreen_control: 1
+      reset_map:
+        control: 0
+        position: topright
+    third_party_settings: {  }
+  field_metatags:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_related_events:
+    weight: 7
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_featured_category: true

@@ -1,0 +1,22 @@
+uuid: 3e0d2baf-3ee3-4868-83a0-d3a84566220e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.map_feature
+  module:
+    - text
+id: node.map_feature.body
+field_name: body
+entity_type: node
+bundle: map_feature
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

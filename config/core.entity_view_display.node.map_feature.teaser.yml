@@ -1,0 +1,33 @@
+uuid: fb4b8f08-6653-4f31-8ebf-212eaf565e6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.map_feature.body
+    - node.type.map_feature
+  module:
+    - text
+    - user
+id: node.map_feature.teaser
+targetEntityType: node
+bundle: map_feature
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_geofield: true
+  field_location_category: true

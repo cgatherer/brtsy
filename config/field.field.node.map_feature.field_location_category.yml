@@ -1,0 +1,29 @@
+uuid: ce5506f5-dd4c-490e-9bdc-885b4ace9b3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_category
+    - node.type.map_feature
+    - taxonomy.vocabulary.location
+id: node.map_feature.field_location_category
+field_name: field_location_category
+entity_type: node
+bundle: map_feature
+label: Category
+description: 'Terms for map filtering'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 4b71d3de-5072-49ec-a380-3b75ff5300c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_category
+    - node.type.event
+    - taxonomy.vocabulary.event
+id: node.event.field_featured_category
+field_name: field_featured_category
+entity_type: node
+bundle: event
+label: 'Featured category'
+description: 'To promote this event in What''s Happening, select the appropriate category'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,106 @@
+uuid: 51d71799-3ce0-4429-aa85-141da7586efe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.neighborhood_feature
+    - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.hero_image
+    - paragraphs.paragraphs_type.hero_video
+    - paragraphs.paragraphs_type.info
+    - paragraphs.paragraphs_type.mega
+    - paragraphs.paragraphs_type.text_area
+    - paragraphs.paragraphs_type.view
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: node.neighborhood_feature.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: neighborhood_feature
+label: Paragraphs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      carousel: carousel
+      hero_image: hero_image
+      hero_video: hero_video
+      block: block
+      gallery: gallery
+      text_area: text_area
+      view: view
+      mega: mega
+      info: info
+      webform: webform
+    target_bundles_drag_drop:
+      carousel:
+        enabled: true
+        weight: 15
+      grid_3:
+        weight: 16
+        enabled: false
+      hero_image:
+        enabled: true
+        weight: 17
+      hero_video:
+        enabled: true
+        weight: 18
+      column_2:
+        weight: 19
+        enabled: false
+      icon_link:
+        weight: 19
+        enabled: false
+      contact_info:
+        weight: 20
+        enabled: false
+      block:
+        enabled: true
+        weight: 20
+      gallery:
+        enabled: true
+        weight: 21
+      news_nearby:
+        weight: 22
+        enabled: false
+      slide:
+        weight: 24
+        enabled: false
+      text_area:
+        enabled: true
+        weight: 25
+      view:
+        enabled: true
+        weight: 26
+      mega:
+        enabled: true
+        weight: 26
+      mega_link_block:
+        weight: 27
+        enabled: false
+      info:
+        enabled: true
+        weight: 28
+      info_sub_block:
+        weight: 29
+        enabled: false
+      venue:
+        weight: 32
+        enabled: false
+      webform:
+        enabled: true
+        weight: 34
+      text_with_sidebar:
+        weight: 35
+        enabled: false
+field_type: entity_reference_revisions

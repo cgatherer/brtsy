@@ -1,0 +1,22 @@
+uuid: 8c5e5262-3d75-4d64-8692-7cf33e12aa7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: neighborhood
+label: Neighborhood
+type: 'canonical_entities:node'
+pattern: 'neighborhood/[node:title]'
+selection_criteria:
+  1b9de5aa-fb09-44d0-a111-b3834c10c433:
+    id: node_type
+    bundles:
+      neighborhood_feature: neighborhood_feature
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1b9de5aa-fb09-44d0-a111-b3834c10c433
+selection_logic: and
+weight: -5
+relationships: {  }

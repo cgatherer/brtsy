@@ -1,0 +1,28 @@
+uuid: 39c65c00-8466-467d-a8e2-201a591521d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.neighborhood_feature.field_address
+    - field.field.node.neighborhood_feature.field_geofield
+    - field.field.node.neighborhood_feature.field_neighborhood_category
+    - field.field.node.neighborhood_feature.field_paragraphs
+    - node.type.neighborhood_feature
+  module:
+    - user
+id: node.neighborhood_feature.teaser
+targetEntityType: node
+bundle: neighborhood_feature
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_geofield: true
+  field_neighborhood_category: true
+  field_paragraphs: true

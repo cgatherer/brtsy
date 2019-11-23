@@ -1,0 +1,21 @@
+uuid: 8614d561-b74f-4a30-91ef-d727e54e48bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_penta_icon
+    - taxonomy.vocabulary.neighborhood_feature
+  module:
+    - options
+id: taxonomy_term.neighborhood_feature.field_penta_icon
+field_name: field_penta_icon
+entity_type: taxonomy_term
+bundle: neighborhood_feature
+label: 'Penta Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

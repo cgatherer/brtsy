@@ -1,0 +1,9 @@
+uuid: 5c3108ab-da7b-48c0-9db6-e71c7943bb50
+langcode: en
+status: true
+dependencies: {  }
+id: mega
+label: Mega
+icon_uuid: null
+description: 'A multifaceted link with optional extra link blocks'
+behavior_plugins: {  }

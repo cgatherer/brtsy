@@ -1,0 +1,21 @@
+uuid: 44459899-67c3-42ab-96cc-1bfceeaace77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_text
+    - paragraphs.paragraphs_type.text_area
+  module:
+    - text
+id: paragraph.text_area.field_para_text
+field_name: field_para_text
+entity_type: paragraph
+bundle: text_area
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

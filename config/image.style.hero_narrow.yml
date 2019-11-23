@@ -1,0 +1,25 @@
+uuid: a1a44f67-fdf1-4a46-8e53-d5d6e13bcb09
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.hero_narrow
+  module:
+    - crop
+name: hero_narrow
+label: 'Hero narrow'
+effects:
+  493013a5-0b8c-4441-9817-12484fe8da0c:
+    uuid: 493013a5-0b8c-4441-9817-12484fe8da0c
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: hero_narrow
+  31c4a98c-f26f-4e9b-8661-8cad3b55233d:
+    uuid: 31c4a98c-f26f-4e9b-8661-8cad3b55233d
+    id: image_scale
+    weight: 2
+    data:
+      width: 1992
+      height: 1160
+      upscale: false

@@ -1,0 +1,52 @@
+//**
+// Project Settings
+//** 
+
+// Consistent settings
+$br: 3px; // Border-radius
+$big-br: 10px;
+$btn-br: 3px; // Button border-radius
+$padding: 2em; // Padding and margins
+$line-height: 44px; // Consistent height for buttons, inputs etc.
+$push-footer-height: 60px;
+$base-transition: all 0.5s 0 ease;
+$easeInOut-transition: all 0.3s ease-in-out;
+$base-box-shadow: #000 2px 2px 3px;
+
+// z-index
+$secondary-nav: 1;
+$content-zindex: 2;
+$header-zindex: 3;
+
+// Max Quanity
+$maxQ: 3;
+
+// icon sizes
+$sy-icons-xl: 196px;
+$sy-icons-lg: 99px;
+$sy-icons-md: 86px;
+$sy-icons-sm: 35px;
+
+// Responsive breakpoints
+$tiny-break: 320px; //max width
+$sixplus: 414px; //min-height
+$small-break: 599px; //max width
+$medium-break: 768px; //max width
+$medium-max-break: 767px; //max width
+$big-break: 1024px; //max width
+$bmax: 1620px;
+$max-width: 1200px; // Max width of the main centered "page content"
+$min-max-width: 1199px;
+$margin: 2.1277%; // Margin between the grid columns
+
+// Default colors
+$red: #C40512;
+$sapphire: #0059A8;
+$clover: #38B34A;
+$black: #000;
+$white: #fff;
+$grey: #777;
+$gold: #FCBF12;
+$capri: #00ADED; 
+$raspberry: #BD1A8C;
+$border-color: #e7e7e7;

@@ -1,0 +1,28 @@
+uuid: 4c7c1e7b-862c-4312-865d-47c8f20e16a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.grid_3.field_para_3_slides
+    - field.field.paragraph.grid_3.field_para_fluid_container
+    - field.field.paragraph.grid_3.field_para_orientation
+    - paragraphs.paragraphs_type.grid_3
+  module:
+    - entity_reference_revisions
+id: paragraph.grid_3.default
+targetEntityType: paragraph
+bundle: grid_3
+mode: default
+content:
+  field_para_3_slides:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_para_fluid_container: true
+  field_para_orientation: true

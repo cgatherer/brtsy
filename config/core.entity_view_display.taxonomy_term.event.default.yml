@@ -1,0 +1,30 @@
+uuid: 6cd784de-8051-49f6-94c8-346887ac5405
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event.field_penta_icon
+    - taxonomy.vocabulary.event
+  module:
+    - options
+    - text
+id: taxonomy_term.event.default
+targetEntityType: taxonomy_term
+bundle: event
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_penta_icon:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

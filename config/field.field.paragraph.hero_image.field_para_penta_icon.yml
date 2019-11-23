@@ -1,0 +1,21 @@
+uuid: 8b9da2a7-e37c-409c-9acb-5420f63ac0a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_penta_icon
+    - paragraphs.paragraphs_type.hero_image
+  module:
+    - options
+id: paragraph.hero_image.field_para_penta_icon
+field_name: field_para_penta_icon
+entity_type: paragraph
+bundle: hero_image
+label: 'Penta Icon'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

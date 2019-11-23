@@ -1,0 +1,19 @@
+uuid: c7770fa5-862f-4672-9d72-e4c367636998
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_video_embed
+    - paragraphs.paragraphs_type.hero_video
+id: paragraph.hero_video.field_para_video_embed
+field_name: field_para_video_embed
+entity_type: paragraph
+bundle: hero_video
+label: 'Video embed'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

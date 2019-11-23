@@ -1,0 +1,9 @@
+uuid: 3f239b2c-2829-4688-a7b1-b931acc0af7b
+langcode: en
+status: true
+dependencies: {  }
+id: news_nearby
+label: 'News & Nearby'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

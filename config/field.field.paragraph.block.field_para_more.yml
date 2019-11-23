@@ -1,0 +1,23 @@
+uuid: ec941077-b4d7-4af3-ac5b-0e7303572b57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_more
+    - paragraphs.paragraphs_type.block
+  module:
+    - link
+id: paragraph.block.field_para_more
+field_name: field_para_more
+entity_type: paragraph
+bundle: block
+label: 'More link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

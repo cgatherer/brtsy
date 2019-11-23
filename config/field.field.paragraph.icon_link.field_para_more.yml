@@ -1,0 +1,23 @@
+uuid: eb221190-a00f-4d52-aaa5-d75366600649
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_more
+    - paragraphs.paragraphs_type.icon_link
+  module:
+    - link
+id: paragraph.icon_link.field_para_more
+field_name: field_para_more
+entity_type: paragraph
+bundle: icon_link
+label: 'Link values'
+description: 'Use link text like "View More" to display below the icon link title.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

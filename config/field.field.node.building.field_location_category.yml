@@ -1,0 +1,29 @@
+uuid: 8e45b524-8979-4f81-a4c7-4f90f26db136
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_category
+    - node.type.building
+    - taxonomy.vocabulary.location
+id: node.building.field_location_category
+field_name: field_location_category
+entity_type: node
+bundle: building
+label: 'Map Category'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

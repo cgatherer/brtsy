@@ -1,0 +1,20 @@
+entity_type_groups:
+  node:
+    article:
+      basic: basic
+      advanced: advanced
+    building:
+      basic: basic
+      advanced: advanced
+    event:
+      basic: basic
+      advanced: advanced
+    landing_page:
+      basic: basic
+      advanced: advanced
+    neighborhood_feature:
+      basic: basic
+      advanced: advanced
+    page:
+      basic: basic
+      advanced: advanced

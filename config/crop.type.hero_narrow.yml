@@ -1,0 +1,12 @@
+uuid: 8ead6c6c-7cef-42db-bf5c-b728a24b0f84
+langcode: en
+status: true
+dependencies: {  }
+label: 'Hero narrow'
+id: hero_narrow
+description: ''
+aspect_ratio: '463:290'
+soft_limit_width: 926
+soft_limit_height: 580
+hard_limit_width: null
+hard_limit_height: null

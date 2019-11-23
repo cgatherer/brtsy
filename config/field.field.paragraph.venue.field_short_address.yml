@@ -1,0 +1,19 @@
+uuid: e236e8ac-34f4-4a1f-a480-bcacb4376476
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_short_address
+    - paragraphs.paragraphs_type.venue
+id: paragraph.venue.field_short_address
+field_name: field_short_address
+entity_type: paragraph
+bundle: venue
+label: 'Short address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

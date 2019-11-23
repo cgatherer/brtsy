@@ -1,0 +1,23 @@
+uuid: 1e2d531a-d92b-47d5-8782-60ec44c3a9c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_fullscreen_takeover
+    - paragraphs.paragraphs_type.hero_video
+id: paragraph.hero_video.field_para_fullscreen_takeover
+field_name: field_para_fullscreen_takeover
+entity_type: paragraph
+bundle: hero_video
+label: 'Fullscreen takeover'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

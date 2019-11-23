@@ -1,0 +1,15 @@
+uuid: 76a60424-4bf9-4c48-bb94-3f03f02157c0
+langcode: en
+status: true
+dependencies: {  }
+name: featured_event
+label: 'Featured Event'
+effects:
+  8dde4547-1cc8-4dd4-bb73-6e21e0fd464e:
+    uuid: 8dde4547-1cc8-4dd4-bb73-6e21e0fd464e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 700
+      anchor: center-center

@@ -1,0 +1,58 @@
+uuid: 2682651e-a2e4-4cc0-b410-b0b004fdbff1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block.field_para_block
+    - field.field.paragraph.block.field_para_fluid_container
+    - field.field.paragraph.block.field_para_more
+    - field.field.paragraph.block.field_para_penta_icon
+    - field.field.paragraph.block.field_para_secondary_color
+    - field.field.paragraph.block.field_para_title
+    - paragraphs.paragraphs_type.block
+  module:
+    - block_field
+    - link
+    - options
+id: paragraph.block.default
+targetEntityType: paragraph
+bundle: block
+mode: default
+content:
+  field_para_block:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+  field_para_more:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_para_penta_icon:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_para_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_para_fluid_container: true
+  field_para_secondary_color: true

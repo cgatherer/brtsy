@@ -1,0 +1,108 @@
+uuid: c57259e5-d017-482a-a415-93654bd2e5a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.building
+    - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.hero_image
+    - paragraphs.paragraphs_type.hero_video
+    - paragraphs.paragraphs_type.info
+    - paragraphs.paragraphs_type.mega
+    - paragraphs.paragraphs_type.text_area
+    - paragraphs.paragraphs_type.text_with_sidebar
+    - paragraphs.paragraphs_type.venue
+    - paragraphs.paragraphs_type.view
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: node.building.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: building
+label: Paragraphs
+description: 'Paragraphs below main building content'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      block: block
+      carousel: carousel
+      hero_image: hero_image
+      hero_video: hero_video
+      info: info
+      mega: mega
+      text_area: text_area
+      text_with_sidebar: text_with_sidebar
+      venue: venue
+      view: view
+      webform: webform
+    target_bundles_drag_drop:
+      block:
+        enabled: true
+        weight: 21
+      carousel:
+        enabled: true
+        weight: 22
+      column_2:
+        weight: 23
+        enabled: false
+      contact_info:
+        weight: 24
+        enabled: false
+      gallery:
+        weight: 25
+        enabled: false
+      grid_3:
+        weight: 26
+        enabled: false
+      hero_image:
+        enabled: true
+        weight: 27
+      hero_video:
+        enabled: true
+        weight: 28
+      icon_link:
+        weight: 29
+        enabled: false
+      info:
+        enabled: true
+        weight: 30
+      info_sub_block:
+        weight: 31
+        enabled: false
+      mega:
+        enabled: true
+        weight: 32
+      mega_link_block:
+        weight: 33
+        enabled: false
+      news_nearby:
+        weight: 34
+        enabled: false
+      slide:
+        weight: 35
+        enabled: false
+      text_area:
+        enabled: true
+        weight: 36
+      text_with_sidebar:
+        enabled: true
+        weight: 37
+      venue:
+        enabled: true
+        weight: 38
+      view:
+        enabled: true
+        weight: 39
+      webform:
+        enabled: true
+        weight: 40
+field_type: entity_reference_revisions

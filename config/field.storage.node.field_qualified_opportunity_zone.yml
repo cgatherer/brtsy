@@ -1,0 +1,18 @@
+uuid: a38470ea-36c8-4925-8679-3d865effb205
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_qualified_opportunity_zone
+field_name: field_qualified_opportunity_zone
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

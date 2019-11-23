@@ -1,0 +1,24 @@
+uuid: 8e22eedb-4cce-4982-9bfb-9473406363af
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.icon_list
+    - field.field.taxonomy_term.event.field_penta_icon
+    - taxonomy.vocabulary.event
+  module:
+    - options
+id: taxonomy_term.event.icon_list
+targetEntityType: taxonomy_term
+bundle: event
+mode: icon_list
+content:
+  field_penta_icon:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden:
+  description: true

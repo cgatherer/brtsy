@@ -1,0 +1,19 @@
+uuid: be7cef89-bd00-4dcf-9d99-4f5ccc9a3658
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_title
+    - paragraphs.paragraphs_type.slide
+id: paragraph.slide.field_para_title
+field_name: field_para_title
+entity_type: paragraph
+bundle: slide
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

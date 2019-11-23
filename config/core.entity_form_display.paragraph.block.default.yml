@@ -1,0 +1,72 @@
+uuid: 7a91ced0-4096-4cc4-a687-fe8896e0dd75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block.field_para_block
+    - field.field.paragraph.block.field_para_fluid_container
+    - field.field.paragraph.block.field_para_more
+    - field.field.paragraph.block.field_para_penta_icon
+    - field.field.paragraph.block.field_para_secondary_color
+    - field.field.paragraph.block.field_para_title
+    - paragraphs.paragraphs_type.block
+  module:
+    - block_field
+    - link_target
+    - select_or_other
+id: paragraph.block.default
+targetEntityType: paragraph
+bundle: block
+mode: default
+content:
+  field_para_block:
+    weight: 3
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_para_fluid_container:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_para_more:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      link_target: ''
+    third_party_settings: {  }
+    type: link_target_field_widget
+    region: content
+  field_para_penta_icon:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_para_secondary_color:
+    weight: 1
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

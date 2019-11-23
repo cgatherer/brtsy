@@ -1,0 +1,30 @@
+uuid: 5cc8aa68-55a6-491a-8b52-707286218910
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.lease_type.field_penta_icon
+    - taxonomy.vocabulary.lease_type
+  module:
+    - options
+    - text
+id: taxonomy_term.lease_type.default
+targetEntityType: taxonomy_term
+bundle: lease_type
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_penta_icon:
+    type: list_key
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

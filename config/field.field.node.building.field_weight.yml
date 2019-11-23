@@ -1,0 +1,23 @@
+uuid: 1c62f99b-33ff-43ff-b82a-ef4e0ae50904
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.building
+  module:
+    - options
+id: node.building.field_weight
+field_name: field_weight
+entity_type: node
+bundle: building
+label: Weight
+description: 'Used for sorting in the Properties view'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

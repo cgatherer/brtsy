@@ -1,0 +1,9 @@
+uuid: 6ea2d026-879c-4617-81db-42b0f4900492
+langcode: en
+status: true
+dependencies: {  }
+id: text_with_sidebar
+label: 'Text with Sidebar'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

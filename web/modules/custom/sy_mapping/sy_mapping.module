@@ -1,0 +1,106 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function sy_mapping_form_views_exposed_form_alter(array &$form, FormStateInterface $form_state) {
+  if (strpos($form['#id'], 'views-exposed-form-map-block-1') !== FALSE) {
+    $options = $form['location']['#options'];
+    $updated_options = [];
+    foreach( $options as $key => $val ) {
+      $updated_options[$key] = t('<span></span>' . $val);
+    }
+    $form['location']['#options'] = $updated_options;
+  }
+}
+
+/**
+ * Implements hook_leaflet_map_info().
+ *
+ * Defines the custom leaflet maps
+ * see also sy_mapping.js
+ *
+ */
+function sy_mapping_leaflet_map_info() {
+  $attr_google = 'Map data &copy; <a href="http://googlemaps.com">Google</a>';
+  $prot = '//';
+  return [
+    'SY-Main' =>
+      [
+        'label' => 'SY Main map',
+        'description' => t('Leaflet SY map.'),
+        'settings' => [
+          'dragging' => TRUE,
+          'touchZoom' => TRUE,
+          'scrollWheelZoom' => FALSE,
+          'doubleClickZoom' => TRUE,
+          'zoomControl' => TRUE,
+          'attributionControl' => TRUE,
+          'trackResize' => TRUE,
+          'fadeAnimation' => TRUE,
+          'zoomAnimation' => TRUE,
+          'closePopupOnClick' => TRUE,
+          'maxBounds' => [
+            [15, -170],
+            [70, -65]
+          ]
+        ],
+        'layers' => [
+          'roadmap' => [
+            'type' => 'google',
+            // For retina displays we append '&style=high_dpi&w=512',
+            // see leaflet_more_maps_preprocess_leaflet_map()
+            'urlTemplate' => $prot . 'mt{s}.googleapis.com/vt?x={x}&y={y}&z={z}',
+            'options' => [
+              'attribution' => $attr_google,
+              'detectRetina' => TRUE,
+              'subdomains' => [0, 1, 2, 3],
+            ],
+          ],
+        ],
+      ],
+    'SY-Nearby' =>
+      [
+        'label' => 'SY Nearby map',
+        'description' => t('Leaflet SY Nearby map.'),
+        'settings' => [
+          'dragging' => TRUE,
+          'touchZoom' => TRUE,
+          'scrollWheelZoom' => FALSE,
+          'doubleClickZoom' => TRUE,
+          'zoomControl' => TRUE,
+          'attributionControl' => TRUE,
+          'trackResize' => TRUE,
+          'fadeAnimation' => TRUE,
+          'zoomAnimation' => TRUE,
+          'closePopupOnClick' => TRUE,
+          'maxBounds' => [
+            [15, -170],
+            [70, -65]
+          ]
+        ],
+        'layers' => [
+          'roadmap' => [
+            'type' => 'google',
+            // For retina displays we append '&style=high_dpi&w=512',
+            // see leaflet_more_maps_preprocess_leaflet_map()
+            'urlTemplate' => $prot . 'mt{s}.googleapis.com/vt?x={x}&y={y}&z={z}',
+            'options' => [
+              'attribution' => $attr_google,
+              'detectRetina' => TRUE,
+              'subdomains' => [0, 1, 2, 3],
+            ],
+          ],
+        ],
+      ],
+  ];
+}
+
+/**
+ * Preprocess function for leaflet_more_maps.
+ */
+function sy_mapping_preprocess_leaflet_map(&$variables) {
+  $variables['#attached']['library'][] = 'sy_mapping/sy-mapping';
+}

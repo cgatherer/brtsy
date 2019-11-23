@@ -1,0 +1,21 @@
+uuid: 659a2672-e567-4db5-b190-feadc87391a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_phone
+    - paragraphs.paragraphs_type.contact_info
+  module:
+    - telephone
+id: paragraph.contact_info.field_para_phone
+field_name: field_para_phone
+entity_type: paragraph
+bundle: contact_info
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,19 @@
+uuid: adc72f63-c88c-42cb-848d-42239fae8087
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_title
+    - paragraphs.paragraphs_type.hero_image
+id: paragraph.hero_image.field_para_title
+field_name: field_para_title
+entity_type: paragraph
+bundle: hero_image
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

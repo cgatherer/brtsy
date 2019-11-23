@@ -1,0 +1,27 @@
+uuid: 73d6c193-51b2-4aeb-a52e-cbe1b0000556
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_downloads
+    - node.type.building
+  module:
+    - file
+id: node.building.field_downloads
+field_name: field_downloads
+entity_type: node
+bundle: building
+label: Downloads
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'downloads/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf ppt pptx doc docx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

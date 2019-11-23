@@ -1,0 +1,91 @@
+uuid: 7752c3d4-d05f-48a8-b0b7-0c839b487fb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.column_2.field_para_fluid_container
+    - field.field.paragraph.column_2.field_para_icon_link
+    - field.field.paragraph.column_2.field_para_more
+    - field.field.paragraph.column_2.field_para_penta_icon
+    - field.field.paragraph.column_2.field_para_secondary_color
+    - field.field.paragraph.column_2.field_para_text
+    - field.field.paragraph.column_2.field_para_title
+    - paragraphs.paragraphs_type.column_2
+  module:
+    - link
+    - paragraphs
+    - select_or_other
+    - text
+id: paragraph.column_2.default
+targetEntityType: paragraph
+bundle: column_2
+mode: default
+content:
+  field_para_fluid_container:
+    weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_para_icon_link:
+    weight: 5
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: icon_link
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_para_more:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_para_penta_icon:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_para_secondary_color:
+    weight: 1
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_para_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,120 @@
+uuid: badb238c-0339-4543-9ffb-8eb912696b13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide.field_para_background_color
+    - field.field.paragraph.slide.field_para_color
+    - field.field.paragraph.slide.field_para_hero_image
+    - field.field.paragraph.slide.field_para_icon
+    - field.field.paragraph.slide.field_para_more
+    - field.field.paragraph.slide.field_para_penta_icon
+    - field.field.paragraph.slide.field_para_secondary_color
+    - field.field.paragraph.slide.field_para_text
+    - field.field.paragraph.slide.field_para_title
+    - field.field.paragraph.slide.field_para_use_overlay
+    - field.field.paragraph.slide.field_para_vimeo_code
+    - image.style.max_1300x1300
+    - paragraphs.paragraphs_type.slide
+  module:
+    - fontawesome
+    - image
+    - link
+    - options
+    - text
+id: paragraph.slide.default
+targetEntityType: paragraph
+bundle: slide
+mode: default
+content:
+  field_para_background_color:
+    weight: 12
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_para_color:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_para_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: max_1300x1300
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_para_icon:
+    weight: 3
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_para_more:
+    weight: 14
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_para_penta_icon:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_para_secondary_color:
+    weight: 13
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_para_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_para_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_para_use_overlay:
+    weight: 15
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_para_vimeo_code:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

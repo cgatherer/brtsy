@@ -1,0 +1,9 @@
+uuid: 62cf085b-7f08-4029-8ae8-8a5f17a9afbf
+langcode: en
+status: true
+dependencies: {  }
+id: hero_video
+label: 'Hero video'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

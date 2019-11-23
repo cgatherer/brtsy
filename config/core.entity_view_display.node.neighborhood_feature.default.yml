@@ -1,0 +1,126 @@
+uuid: 9c078fee-0a2a-49a4-972c-8789e592daed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.neighborhood_feature.field_address
+    - field.field.node.neighborhood_feature.field_geofield
+    - field.field.node.neighborhood_feature.field_hero_image
+    - field.field.node.neighborhood_feature.field_location_category
+    - field.field.node.neighborhood_feature.field_metatags
+    - field.field.node.neighborhood_feature.field_neighborhood_category
+    - field.field.node.neighborhood_feature.field_paragraphs
+    - node.type.neighborhood_feature
+    - responsive_image.styles.hero
+  module:
+    - address
+    - address_map_link
+    - entity_reference_revisions
+    - leaflet
+    - metatag
+    - responsive_image
+    - user
+id: node.neighborhood_feature.default
+targetEntityType: node
+bundle: neighborhood_feature
+mode: default
+content:
+  field_address:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      address_map_link:
+        link_address: '1'
+        map_link_type: google_maps
+        map_link_position: before
+        map_link_text: 'Google Maps >'
+        map_link_new_window: '1'
+    type: address_default
+    region: content
+  field_geofield:
+    weight: 1
+    label: hidden
+    settings:
+      multiple_map: '0'
+      popup_content: ''
+      leaflet_map: SY-Main
+      height: '200'
+      map_position:
+        zoom: '12'
+        minZoom: '1'
+        maxZoom: '18'
+        force: 0
+      icon:
+        iconUrl: ''
+        shadowUrl: ''
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: ''
+          'y': ''
+        shadowSize:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: ''
+          'y': ''
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+      popup: 0
+      hide_empty_map: 0
+      disable_wheel: 0
+      leaflet_markercluster:
+        control: 0
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+      fullscreen_control: 1
+      reset_map:
+        control: 0
+        position: topright
+    third_party_settings: {  }
+    type: leaflet_formatter_default
+    region: content
+  field_hero_image:
+    weight: 5
+    label: hidden
+    settings:
+      responsive_image_style: hero
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_metatags:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_neighborhood_category:
+    weight: 3
+    label: hidden
+    settings:
+      link: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_paragraphs:
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_location_category: true

@@ -1,0 +1,40 @@
+uuid: 30afbdc1-80dc-4e4f-ae62-66feaff542af
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.building.body
+    - node.type.building
+  module:
+    - text
+    - user
+id: node.building.teaser
+targetEntityType: node
+bundle: building
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_building_status: true
+  field_contact_info: true
+  field_downloads: true
+  field_gallery: true
+  field_geofield: true
+  field_hero_image: true
+  field_koz: true
+  field_lease_types: true
+  field_related_properties: true

@@ -1,0 +1,9 @@
+uuid: f823a5df-1dd7-4ff2-a95f-a8b2d1ba3457
+langcode: en
+status: true
+dependencies: {  }
+name: 'Neighborhood feature'
+vid: neighborhood_feature
+description: ''
+hierarchy: 0
+weight: 0

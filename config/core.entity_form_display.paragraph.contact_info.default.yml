@@ -1,0 +1,68 @@
+uuid: 54e71b14-59cb-4192-bf64-89a0ca8ac1b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_info.field_para_company
+    - field.field.paragraph.contact_info.field_para_contact
+    - field.field.paragraph.contact_info.field_para_email
+    - field.field.paragraph.contact_info.field_para_penta_icon
+    - field.field.paragraph.contact_info.field_para_phone
+    - field.field.paragraph.contact_info.field_para_title
+    - paragraphs.paragraphs_type.contact_info
+  module:
+    - telephone
+id: paragraph.contact_info.default
+targetEntityType: paragraph
+bundle: contact_info
+mode: default
+content:
+  field_para_company:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_para_contact:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_para_email:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_para_penta_icon:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_para_phone:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_para_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

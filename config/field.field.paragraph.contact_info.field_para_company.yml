@@ -1,0 +1,19 @@
+uuid: b0a4877b-d0bc-4319-a073-ab3e983fbd44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_company
+    - paragraphs.paragraphs_type.contact_info
+id: paragraph.contact_info.field_para_company
+field_name: field_para_company
+entity_type: paragraph
+bundle: contact_info
+label: Company
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,13 @@
+{
+  "name": "visual-regression-testing",
+  "version": "1.0.0",
+  "scripts": {
+    "reference-local": "backstop reference --config=config/local.js",
+    "test-local": "backstop test --config=config/local.js",
+    "reference-dev": "backstop reference --config=config/dev.js",
+    "test-dev": "backstop test --config=config/dev.js"
+  },
+  "dependencies": {
+    "backstopjs": "^3.8.5"
+  }
+}

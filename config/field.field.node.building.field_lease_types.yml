@@ -1,0 +1,29 @@
+uuid: 71394343-4d47-41fc-bb8b-fc19c8b41bac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lease_types
+    - node.type.building
+    - taxonomy.vocabulary.lease_type
+id: node.building.field_lease_types
+field_name: field_lease_types
+entity_type: node
+bundle: building
+label: 'Lease Types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      lease_type: lease_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

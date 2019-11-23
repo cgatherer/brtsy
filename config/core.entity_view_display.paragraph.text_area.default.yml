@@ -1,0 +1,42 @@
+uuid: 2845986b-a6d6-4179-9eeb-eb34195876ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_area.field_para_penta_icon
+    - field.field.paragraph.text_area.field_para_secondary_color
+    - field.field.paragraph.text_area.field_para_text
+    - field.field.paragraph.text_area.field_para_title
+    - paragraphs.paragraphs_type.text_area
+  module:
+    - options
+    - text
+id: paragraph.text_area.default
+targetEntityType: paragraph
+bundle: text_area
+mode: default
+content:
+  field_para_penta_icon:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_para_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_para_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_para_secondary_color: true

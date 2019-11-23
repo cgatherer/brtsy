@@ -1,0 +1,19 @@
+uuid: 399c1234-03be-46f5-94d9-7bd1fc825d9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_vimeo_code
+    - paragraphs.paragraphs_type.slide
+id: paragraph.slide.field_para_vimeo_code
+field_name: field_para_vimeo_code
+entity_type: paragraph
+bundle: slide
+label: 'Vimeo code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

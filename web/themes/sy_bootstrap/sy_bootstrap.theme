@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+function sy_bootstrap_preprocess_html(&$variables) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  $path_alias = \Drupal::service('path.alias_manager')
+    ->getAliasByPath($current_path);
+  $path_alias = ltrim($path_alias, '/');
+  $variables['attributes']['class'][] = \Drupal\Component\Utility\Html::cleanCssIdentifier($path_alias);
+}
+
+/**
+ * Implements hook_template_preprocess_default_variables_alter().
+ *
+ * @see user_user_login()
+ * @see user_user_logout()
+ */
+function sy_bootstrap_user_template_preprocess_default_variables_alter(&$variables) {
+  $user = \Drupal::currentUser();
+
+  $variables['user'] = clone $user;
+  // Remove password and session IDs, since themes should not need nor see them.
+  unset($variables['user']->pass, $variables['user']->sid, $variables['user']->ssid);
+
+  $variables['is_admin'] = $user->hasPermission('access administration pages');
+  $variables['logged_in'] = $user->isAuthenticated();
+}
+
+
+function sy_bootstrap_preprocess(&$variables, $hook)
+{
+  $variables['base_path'] = base_path();
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function sy_bootstrap_theme_suggestions_paragraph_alter(&$suggestions, $variables) {
+  $paragraph = $variables['elements']['#paragraph'];
+  $parent = $paragraph->getParentEntity();
+  if ($parent) {
+    $suggestions[] = 'paragraph__' . $parent->bundle() . '__' .  $paragraph->bundle();
+  }
+}

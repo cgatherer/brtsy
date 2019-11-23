@@ -1,0 +1,38 @@
+uuid: 7c501847-c5bd-4931-92da-f9869a35ccca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_hero_image
+    - paragraphs.paragraphs_type.venue
+  module:
+    - image
+id: paragraph.venue.field_para_hero_image
+field_name: field_para_hero_image
+entity_type: paragraph
+bundle: venue
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'venue/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

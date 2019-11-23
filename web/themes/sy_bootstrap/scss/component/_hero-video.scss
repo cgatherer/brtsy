@@ -1,0 +1,172 @@
+/* ==========================================
+    @Hero Video
+=========================================== */
+
+.paragraph--type--hero-video {
+  .hero {
+    display: flex; 
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    &--fullscreen {
+      position: relative;
+      overflow: hidden;
+      .video-container {
+        position: absolute;
+        top: 0px;
+        transform: scale(1.25);
+        max-width: none;
+        &--content {
+          position: relative;
+          z-index: 2;
+        }
+        iframe {
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          width: 100vw;
+          height: 56.25vw; 
+          min-height: 100vh;
+          min-width: 110vw; 
+          @include atLarge {
+            transform: scale(1.25);
+          }
+          @include atMedium {
+            transform: scale(2);
+          }
+          @include atMediumMax {
+            transform: scale(3);
+          }
+        }
+      }
+    }
+    &--notfullscreen {
+      .video-container {
+        position: relative;
+        padding-bottom: 53%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        &--content {
+          position: relative;
+          z-index: 2;
+        }
+        iframe {
+          min-height: 100%;
+          min-width: 100%;
+          object-fit: cover;
+          position: absolute;
+        }
+      }
+    }
+    &--nooverlay {
+      .video-container {
+        position: relative;
+        padding-bottom: 53%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        iframe, 
+        object,   
+        embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .hero-info-overlay {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: #ffffff;
+      z-index: 2;
+      background: rgba(#000000, .27);
+      @include atLarge {
+        padding: 15% 0;
+      }
+      @include atMedium {
+        padding: 40% 0;
+      }
+      @include atMediumMax {
+        padding: 50% 0;
+      }
+    }
+    .color-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .hero-title {
+      @include H01;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+    .hero-body {
+      margin-bottom: 3rem;
+      padding: 0 0 1rem 0;
+
+      .field--item {
+        @include Paragraph;
+        margin-top: 0;
+        margin-bottom: 0.75em;
+        
+        img {
+          max-width: 285px;
+          @include atMediumMax {
+            max-width: 150px;
+          }
+        }
+      }
+    }
+    .field--type-link {
+      display: block;
+      padding: 1em;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      color: black;
+      text-decoration: none;
+    }
+    .paragraph--type--icon-link {
+      .icon-link {
+        width: 280px;
+        height: 234px;
+        margin: 0 auto 25px;
+        text-align: center;
+        padding: 20px;
+        color: $black;
+        background-color: $white;
+        box-shadow: 0 0 15px 0 rgba(25, 43, 79, 0.55);
+        .fontawesome-icon, .sy-icons {
+          margin-top: 10px;
+        }
+      }
+    }
+    .paragraph--type--icon-link {
+      a, a:hover, a:focus {
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// MS Edge Support
+.paragraph--type--hero-video {
+  .hero {
+    .hero-info-overlay {
+      @supports (-ms-ime-align:auto) {
+        @media (max-width: 1024px) {
+          padding: 15% 0;
+        }
+      }
+    }
+  }
+}

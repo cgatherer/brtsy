@@ -1,0 +1,80 @@
+{#
+/**
+ * @file
+ * Default view template to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('sy_bootstrap/atc') }}
+<div class="row sy-views-type-whats-happening">
+  <div class="container">
+    <div class="item">
+        <div class="row">
+          <div class="col-sm-5">
+            <a href="{{ fields.view_node.content|trim }}">
+            {{ fields.field_event_image.content }}
+              </a>
+          </div>
+          <div class="col-sm-7">
+
+            <div class="has-icons">
+              <span class="day">{{ fields.field_date_range.content }}</span>
+              <span class="month">{{ fields.field_date_range_1.content }}</span>
+              &nbsp;&nbsp; {{ fields.field_event_category.content }}
+            </div>
+            <a href="{{ fields.view_node.content|trim }}">
+              <h3 class="title">{{ fields.title.content }}</h3>
+            </a>
+            <div class="body">{{ fields.body.content }}</div>
+            <div class="actions">
+              <div class="atc-wrapper">
+                <div class="addtocalendar" data-on-button-click="AtcClose">
+                  <a class="atcb-link"><i class="fa fa-calendar-plus-o"></i> Add to Calendar</a>
+                  <var class="atc_event">
+                    <var class="atc_date_start">{{ fields.field_date_range_2.content }}</var>
+                    <var class="atc_date_end">{{ fields.field_date_range_3.content }}</var>
+                    <var class="atc_timezone">America/New_York</var>
+                    <var class="atc_title">{{ fields.title.content }}</var>
+                    <var class="atc_description">{{ fields.body.content }}</var>
+                    <var class="atc_location">{{ fields.field_address.content }}</var>
+                    <var class="atc_organizer"></var>
+                    <var class="atc_organizer_email"></var>
+                  </var>
+                </div>
+              </div>
+              <div class="directions-wrapper">
+                <a href="{{ fields.field_address_1.content }}" class="link-directions" target="_blank"><i class="fas fa-map-marker"></i> Get Directions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+

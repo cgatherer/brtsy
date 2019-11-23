@@ -1,0 +1,19 @@
+uuid: 9946790c-d3cc-4314-aea5-1d176f129cdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_contact
+    - paragraphs.paragraphs_type.contact_info
+id: paragraph.contact_info.field_para_contact
+field_name: field_para_contact
+entity_type: paragraph
+bundle: contact_info
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

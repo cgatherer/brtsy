@@ -1,0 +1,24 @@
+uuid: 24a42d23-1947-4e4a-9dad-8ff97e7abf32
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.top-menu
+  module:
+    - system
+  theme:
+    - sy_bootstrap
+id: topmenu
+theme: sy_bootstrap
+region: secondary_menu
+weight: -5
+provider: null
+plugin: 'system_menu_block:top-menu'
+settings:
+  id: 'system_menu_block:top-menu'
+  label: 'Top Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

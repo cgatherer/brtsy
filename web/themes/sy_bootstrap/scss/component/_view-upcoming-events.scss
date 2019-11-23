@@ -1,0 +1,102 @@
+/* ==========================================
+    @View Upcoming Events
+=========================================== */
+
+.view-upcoming-events {
+  margin: 20px 0;
+  
+  .left {
+    text-align: center;
+    margin: 30px 0;
+    padding: 6% 0px;
+
+    h3 {
+      @include H03;
+      color: $black;
+      font-size: 5rem !important;
+    }
+
+    a {
+      @include Paragraph;
+      letter-spacing: .05rem;
+      color: $capri !important;
+    }
+  }
+
+  .right {
+    .row.sy-views-type-upcoming-events {
+      a {
+        padding: 30px 50px;
+        text-decoration: none !important;
+        color: $black;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #ebebeb;
+        transition: all ease-in .2s;
+
+        .day {
+          @include Headings;
+          font-size: 3rem;
+          color: $capri;
+        }
+        
+        .month {
+          @include Paragraph;
+          position: relative;
+          bottom: 8px;
+          font-size: 1.15rem;
+          color: $capri;
+          text-transform: uppercase;
+          padding: 5px 0;
+          margin-left: 10px;
+          border-bottom: 2px solid $capri;
+        }
+        
+        .title {
+          @include Paragraph;
+          font-size: 2rem !important;
+          font-weight: 300;
+          color: $black;
+          margin-left: 20px;
+        }
+        
+        .sy-arrow {
+          background-color: $capri;
+          
+          &--border {
+            transition: all ease-in .2s;
+            border: solid 2px $capri;
+            margin-top: 10px;
+          }
+        }
+        
+        &:hover {
+          background-color: $capri;
+          color: $white;
+
+          .day {
+            color: $white;
+          }
+          
+          .month {
+            color: $white;
+            border-bottom: 2px solid $white;
+          }
+
+          .title {
+            color: $white;
+          }
+
+          .sy-arrow {
+            background-color: $white;
+            
+            &--border {
+              transform: scale(1.15);
+              border: solid 2px $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

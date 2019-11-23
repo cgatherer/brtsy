@@ -1,0 +1,55 @@
+uuid: 9b6c8b94-c0a4-4a25-b3de-0e7abb01cfc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_icon_link
+    - paragraphs.paragraphs_type.hero_video
+    - paragraphs.paragraphs_type.icon_link
+  module:
+    - entity_reference_revisions
+id: paragraph.hero_video.field_para_icon_link
+field_name: field_para_icon_link
+entity_type: paragraph
+bundle: hero_video
+label: 'Icon Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icon_link: icon_link
+    target_bundles_drag_drop:
+      icon_link:
+        enabled: true
+        weight: 10
+      calendar_upcoming:
+        weight: 11
+        enabled: false
+      carousel:
+        weight: 12
+        enabled: false
+      grid_3:
+        weight: 13
+        enabled: false
+      hero_image:
+        weight: 14
+        enabled: false
+      hero_video:
+        weight: 15
+        enabled: false
+      instagram:
+        weight: 16
+        enabled: false
+      slide:
+        weight: 17
+        enabled: false
+      text_area:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

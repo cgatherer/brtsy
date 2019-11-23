@@ -1,0 +1,21 @@
+uuid: e140b776-d0e1-4d78-bd74-4eb7fc636c6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_text
+    - paragraphs.paragraphs_type.hero_video
+  module:
+    - text
+id: paragraph.hero_video.field_para_text
+field_name: field_para_text
+entity_type: paragraph
+bundle: hero_video
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,151 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - paragraph.getCreatedTime() will return the paragraph creation timestamp.
+ *   - paragraph.id(): The paragraph ID.
+ *   - paragraph.bundle(): The type of the paragraph, for example, "image" or "text".
+ *   - paragraph.getOwnerId(): The user ID of the paragraph author.
+ *   See Drupal\paragraphs\Entity\Paragraph for a full list of public properties
+ *   and methods for the paragraph object.
+ * - content: All paragraph items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - paragraphs: The current template type (also known as a "theming hook").
+ *   - paragraphs--type-[type]: The current paragraphs type. For example, if the paragraph is an
+ *     "Image" it would result in "paragraphs--type--image". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - paragraphs--view-mode--[view_mode]: The View Mode of the paragraph; for example, a
+ *     preview would result in: "paragraphs--view-mode--preview", and
+ *     default: "paragraphs--view-mode--default".
+ * - view_mode: View mode; for example, "preview" or "full".
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_paragraph() 
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+not paragraph.isPublished() ? 'paragraph--unpublished'
+]
+%}
+
+{% set use_overlay = paragraph.field_para_use_overlay.value %}
+{% set text_color = paragraph.field_para_color.value %}
+{% set secondary_color = paragraph.field_para_secondary_color.value %}
+{% set bg_color = paragraph.field_para_background_color.value %}
+{% set vimeo_code = paragraph.field_para_vimeo_code.value %}
+{% set image = content.field_para_hero_image %}
+{% set sy_icon = paragraph.field_para_penta_icon.value %}
+{% set more_text = paragraph.field_para_more.title %}
+{% set more_uri = paragraph.field_para_more.uri %}
+{% set link_target = 'target="_blank"' %}
+{% if 'entity:node/' in more_uri %}
+    {% set more_uri = more_uri | split('/')[1] %}
+    {% set more_uri = path('entity.node.canonical', {'node': more_uri}) %}
+    {% set link_target = '' %}
+{% elseif 'internal:' in more_uri %}
+    {% set more_uri = more_uri | split(':')[1] %}
+{% endif %}
+{% set link_only = paragraph.field_link_only.value %}
+
+{% if text_color is empty and (bg_color is empty and vimeo_code is empty and not image[0]) %}
+    {%  set text_color = '#000000' %}
+{% elseif text_color is empty and (bg_color is not empty or vimeo_code is not empty or image[0]) %}
+    {%  set text_color = '#ffffff' %}
+{%  endif %}
+
+{# Set Overlay #}
+{% if use_overlay == '1' %}
+    {% if vimeo_code is not empty or image[0] %}
+        {% if bg_color is empty %}
+            {% set overlay_color = '#000000' %}
+        {% else %}
+            {% set overlay_color = bg_color %}
+        {% endif %}
+    {% else %}
+        {% set use_overlay = '0' %}
+    {% endif %}
+{% endif %}
+
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }}>
+        {% block content %}
+            <div class="carousel-item slide" {% if bg_color %} style="background-color: {{ bg_color }};" {% endif %} >
+                <div class="slide-inner">
+
+
+                    {# Slide Media #}
+                    {% if vimeo_code is not empty %}
+                        <div class="slide-media slide-media--video">
+                            <iframe src="https://player.vimeo.com/video/{{ vimeo_code }}?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    {% elseif image[0] %}
+                        <div class="slide-media slide-medias">
+                            {{ image }}
+                    {% else %}
+                        <div class="slide-media slide-media--no-media">
+                    {% endif %}
+                    </div>
+
+                    {% if use_overlay == '1' %}
+                        <div class="color-overlay" style="background-color: {{ overlay_color }}50;"></div>
+                    {% endif %}
+
+                    {# Slide Info #}
+                    {% if vimeo_code is not empty %}
+                        <div class="slide-info" style="position:absolute;">   
+                    {% elseif image[0] %}
+                        <div class="slide-info" style="position:absolute;">
+                    {% else %}
+                        <div class="slide-info slide-info--no-media" style="padding: 5rem 0;">
+                    {% endif %}
+
+                        {% if sy_icon %}
+                            <i {% if secondary_color %} style="background-color: {{ secondary_color }};" {% endif %} class="sy-icon-lg--{{ sy_icon }}"></i>
+                        {% endif %}
+
+                        {% if content.field_para_title[0] %}
+                            <h3 class="slide-info--title" {% if text_color %} style="color: {{ text_color }};" {% endif %}>{{ content.field_para_title }}</h3>
+                        {% endif %}
+
+                        {% if content.field_para_text[0] %}
+                            <div class="slide-info--body" {% if text_color %} style="color: {{ text_color }};" {% endif %}> {{ content.field_para_text }}</div>
+                        {% endif %}
+                        
+                        {% if vimeo_code is not empty %}
+                            {% if content.field_para_more[0] %}
+                                <a href="{{ more_uri }}" {{ link_target }} class="slide-info--link" {% if text_color %} style="color: {{ secondary_color }};border: solid 5px {{ secondary_color }};" {% endif %}>{{ more_text }}</a>
+                            {% endif %}   
+                        {% elseif image[0] %}
+                            {% if content.field_para_more[0] %}
+                                <a href="{{ more_uri }}" {{ link_target }} class="slide-info--link" {% if text_color %} style="color: {{ secondary_color }};border: solid 3px {{ secondary_color }};" {% endif %}>{{ more_text }}</a>
+                            {% endif %}
+                        {% else %}
+                            {% if content.field_para_more[0] %}
+                                <a href="{{ more_uri }}" {{ link_target }} class="slide-info--link-no-bg" {% if secondary_color %} style="color: {{ secondary_color }};" {% endif %}>{{ more_text }} <i class="fas fa-angle-right"></i></a>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    </div>
+{% endblock paragraph %}
+

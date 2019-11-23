@@ -1,0 +1,82 @@
+uuid: 611a731e-d4d8-4ab8-a605-f4040e36bd39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_icon_link
+    - paragraphs.paragraphs_type.column_2
+    - paragraphs.paragraphs_type.icon_link
+  module:
+    - entity_reference_revisions
+id: paragraph.column_2.field_para_icon_link
+field_name: field_para_icon_link
+entity_type: paragraph
+bundle: column_2
+label: 'Link list'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icon_link: icon_link
+    target_bundles_drag_drop:
+      calendar_upcoming:
+        weight: 19
+        enabled: false
+      carousel:
+        weight: 20
+        enabled: false
+      column_2:
+        weight: 21
+        enabled: false
+      contact_info:
+        weight: 22
+        enabled: false
+      grid_3:
+        weight: 23
+        enabled: false
+      hero_image:
+        weight: 24
+        enabled: false
+      hero_video:
+        weight: 25
+        enabled: false
+      icon_link:
+        enabled: true
+        weight: 26
+      instagram:
+        weight: 27
+        enabled: false
+      mega:
+        weight: 28
+        enabled: false
+      mega_link_block:
+        weight: 29
+        enabled: false
+      neighborhood:
+        weight: 30
+        enabled: false
+      news_nearby:
+        weight: 31
+        enabled: false
+      properties:
+        weight: 32
+        enabled: false
+      slide:
+        weight: 33
+        enabled: false
+      text_area:
+        weight: 34
+        enabled: false
+      view:
+        weight: 35
+        enabled: false
+      webform:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,68 @@
+uuid: 55f80f11-6f2a-41b0-a10b-63e7588d640d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_link.field_link_only
+    - field.field.paragraph.icon_link.field_para_icon
+    - field.field.paragraph.icon_link.field_para_more
+    - field.field.paragraph.icon_link.field_para_penta_icon
+    - field.field.paragraph.icon_link.field_para_secondary_color
+    - field.field.paragraph.icon_link.field_para_title
+    - paragraphs.paragraphs_type.icon_link
+  module:
+    - fontawesome
+    - link
+    - select_or_other
+id: paragraph.icon_link.default
+targetEntityType: paragraph
+bundle: icon_link
+mode: default
+content:
+  field_link_only:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_para_icon:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+  field_para_more:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_para_penta_icon:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_para_secondary_color:
+    weight: 4
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

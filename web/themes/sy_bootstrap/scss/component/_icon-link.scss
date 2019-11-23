@@ -1,0 +1,18 @@
+/* ==========================================
+    @icon link paragraph
+=========================================== */
+
+.paragraph--type--icon-link {
+	.icon-link {
+	  width: 280px;
+      height: 234px;
+      margin: 25px auto;
+      text-align: center;
+      padding: 20px;
+      color: $black;
+      background-color: $white;
+      .fontawesome-icon, .sy-icons {
+        margin-top: 10px;
+      }
+	}
+}

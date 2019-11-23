@@ -1,0 +1,19 @@
+uuid: e4ced45b-444d-4d8f-bbd1-e584cec543b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_title
+    - paragraphs.paragraphs_type.mega_link_block
+id: paragraph.mega_link_block.field_para_title
+field_name: field_para_title
+entity_type: paragraph
+bundle: mega_link_block
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,30 @@
+uuid: b7da3e40-6948-47f2-a9d7-a4a36bc44da6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.neighborhood_feature.field_penta_icon
+    - taxonomy.vocabulary.neighborhood_feature
+  module:
+    - options
+    - text
+id: taxonomy_term.neighborhood_feature.default
+targetEntityType: taxonomy_term
+bundle: neighborhood_feature
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_penta_icon:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

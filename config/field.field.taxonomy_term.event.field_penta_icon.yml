@@ -1,0 +1,21 @@
+uuid: bb0c0c28-64e0-4c85-97e4-c977288131d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_penta_icon
+    - taxonomy.vocabulary.event
+  module:
+    - options
+id: taxonomy_term.event.field_penta_icon
+field_name: field_penta_icon
+entity_type: taxonomy_term
+bundle: event
+label: 'Penta Icon'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

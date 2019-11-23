@@ -1,0 +1,21 @@
+uuid: 54ee8ac1-0bf1-4370-94db-faa98c5564ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_icon
+    - paragraphs.paragraphs_type.slide
+  module:
+    - fontawesome
+id: paragraph.slide.field_para_icon
+field_name: field_para_icon
+entity_type: paragraph
+bundle: slide
+label: 'FA Icon'
+description: 'FontAwesome Icon'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

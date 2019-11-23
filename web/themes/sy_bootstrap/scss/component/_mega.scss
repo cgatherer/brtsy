@@ -1,0 +1,72 @@
+/* ==========================================
+    @Mega Paragraph
+=========================================== */
+
+.mega {
+  margin-top: 30px;
+  .mega-inner {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    .mega-title {
+      @include H01;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      text-align: center;
+      color: $black;
+    }
+    .more-text {
+      text-align: center;
+    }
+    .sy-icons {
+      margin: 0 auto 20px;
+    }
+  }
+  .mega-links {
+    margin-top: 30px;
+    .item {
+      padding-left: 1px !important;
+      padding-right: 1px !important;
+    }
+    .mega-link {
+      .mega-link-title {
+        @include H03;
+        padding: 10px 0;
+        margin: 0;
+        text-align: center;
+      }
+      .mega-link-inner {
+        display: flex;
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        .img-responsive {
+          width: 100%;
+        }
+        .color-overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+        .more-text {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          a, a:hover, a:visited {
+            color: $white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 20px 30px;
+            border: 3px solid $white;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            background-color: rgba($black, 0.33);
+          }
+        }
+      }
+    }
+  }
+}

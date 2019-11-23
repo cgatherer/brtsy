@@ -1,0 +1,23 @@
+uuid: 013c30d1-72ee-4a63-9cef-9b2ead88ab7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_color
+    - paragraphs.paragraphs_type.slide
+  module:
+    - options
+id: paragraph.slide.field_para_color
+field_name: field_para_color
+entity_type: paragraph
+bundle: slide
+label: Color
+description: 'Title and body color (choose or set custom hex value, e.g. #cccccc). Will default black, or white if any of background color, overlay with color, image or video is set. '
+required: false
+translatable: false
+default_value:
+  -
+    value: '#859EB4'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

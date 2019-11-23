@@ -1,0 +1,21 @@
+uuid: b5e9b3af-5908-4d3e-a4f3-692afbed5a55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_carousel_speed
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - options
+id: paragraph.carousel.field_para_carousel_speed
+field_name: field_para_carousel_speed
+entity_type: paragraph
+bundle: carousel
+label: 'Carousel speed'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

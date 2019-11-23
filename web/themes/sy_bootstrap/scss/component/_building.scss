@@ -1,0 +1,13 @@
+/* ==========================================
+    @Building - Content Type
+=========================================== */
+.contact-line {
+  display: table-row;
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right:10px;
+    padding-bottom: 4px;
+  }
+}
+

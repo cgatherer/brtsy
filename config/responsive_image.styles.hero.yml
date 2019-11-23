@@ -1,0 +1,25 @@
+uuid: 5632009e-ce25-4dea-a3aa-f6f93686a083
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.hero_narrow
+    - image.style.hero_small
+    - image.style.hero_standard
+  theme:
+    - bootstrap
+id: hero
+label: Hero
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_standard
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_narrow
+breakpoint_group: bootstrap
+fallback_image_style: hero_small

@@ -1,0 +1,60 @@
+uuid: 805d7446-80d9-49ea-9f0a-886a88cf2faf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mega.field_para_fluid_container
+    - field.field.paragraph.mega.field_para_mega_link_blocks
+    - field.field.paragraph.mega.field_para_more
+    - field.field.paragraph.mega.field_para_penta_icon
+    - field.field.paragraph.mega.field_para_secondary_color
+    - field.field.paragraph.mega.field_para_title
+    - paragraphs.paragraphs_type.mega
+  module:
+    - entity_reference_revisions
+    - link
+    - options
+id: paragraph.mega.default
+targetEntityType: paragraph
+bundle: mega
+mode: default
+content:
+  field_para_mega_link_blocks:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_para_more:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_para_penta_icon:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_para_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_para_fluid_container: true
+  field_para_secondary_color: true

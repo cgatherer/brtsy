@@ -1,0 +1,23 @@
+uuid: 1382c723-367f-4ee9-bf5e-b8836aba8acb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_background_color
+    - paragraphs.paragraphs_type.slide
+  module:
+    - options
+id: paragraph.slide.field_para_background_color
+field_name: field_para_background_color
+entity_type: paragraph
+bundle: slide
+label: 'Background/Overlay color'
+description: 'If a video or image is used, this color will be used for the tinted overlay instead of the background'
+required: false
+translatable: false
+default_value:
+  -
+    value: '#859EB4'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

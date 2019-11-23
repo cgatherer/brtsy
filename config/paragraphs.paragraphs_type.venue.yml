@@ -1,0 +1,9 @@
+uuid: d8b1d94e-0571-47ac-a3ff-fb77452f5ea6
+langcode: en
+status: true
+dependencies: {  }
+id: venue
+label: Venue
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: af2b800a-5d79-4bd3-8efa-6e1ed22dfd33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_fluid_container
+    - paragraphs.paragraphs_type.block
+id: paragraph.block.field_para_fluid_container
+field_name: field_para_fluid_container
+entity_type: paragraph
+bundle: block
+label: 'Fluid Container'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

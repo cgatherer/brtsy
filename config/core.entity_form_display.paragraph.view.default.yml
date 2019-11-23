@@ -1,0 +1,69 @@
+uuid: e3554acd-295d-41a9-a9f3-c0656605747c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.view.field_para_fluid_container
+    - field.field.paragraph.view.field_para_more
+    - field.field.paragraph.view.field_para_penta_icon
+    - field.field.paragraph.view.field_para_secondary_color
+    - field.field.paragraph.view.field_para_title
+    - field.field.paragraph.view.field_para_view
+    - paragraphs.paragraphs_type.view
+  module:
+    - link_target
+    - select_or_other
+    - viewsreference
+id: paragraph.view.default
+targetEntityType: paragraph
+bundle: view
+mode: default
+content:
+  field_para_fluid_container:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_para_more:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      link_target: ''
+    third_party_settings: {  }
+    type: link_target_field_widget
+    region: content
+  field_para_penta_icon:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_para_secondary_color:
+    weight: 1
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_para_view:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

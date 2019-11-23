@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * Replace the default multi-select boxes with two panels list and filter.
+ */
+
+/**
+ * Implements template_preprocess_page().
+ */
+function improved_multi_select_preprocess_page(&$variables) {
+  $is_enabled = FALSE;
+  $config = \Drupal::config('improved_multi_select.settings');
+  $url = trim($config->get('url'));
+  $selectors = array_filter(explode("\n", str_replace("\r", "\n", trim($config->get('selectors')))));
+
+  if ($replace_all = $config->get('isall')) {
+    $is_enabled = TRUE;
+  }
+  else {
+    if (($url && \Drupal::service('path.matcher')->matchPath(\Drupal::request()->getRequestUri(), $url)) || $selectors) {
+      $is_enabled = TRUE;
+    }
+  }
+  if ($is_enabled) {
+    $selectors = improved_multi_select_load_selectors($replace_all, $selectors);
+    $variables['#attached']['library'][] = 'improved_multi_select/ims';
+    $variables['#attached']['drupalSettings']['improved_multi_select'] = [
+      'selectors' => $selectors,
+      'filtertype' => $config->get('filtertype'),
+      'orderable' => $config->get('orderable'),
+      'groupresetfilter' => $config->get('groupresetfilter'),
+      'buttontext_add' => $config->get('buttontext_add'),
+      'buttontext_addall' => $config->get('buttontext_addall'),
+      'buttontext_del' => $config->get('buttontext_del'),
+      'buttontext_delall' => $config->get('buttontext_delall'),
+      'buttontext_moveup' => $config->get('buttontext_moveup'),
+      'buttontext_movedown' => $config->get('buttontext_movedown'),
+    ];
+  }
+}
+
+/**
+ * Return array of jQuery selectors from jQuery selectors or 'replace all' option.
+ *
+ * @param boolean $replace_all
+ *   Boolean indicating if all multiselects will be replaced.
+ * @param array $selectors
+ *   Array with jQuery selectors.
+ *
+ * @return array
+ *   Array with jQuery selectors.
+ */
+function improved_multi_select_load_selectors($replace_all, $selectors) {
+  $output = [];
+  if (!empty($selectors) and !$replace_all) {
+    foreach ($selectors as $selector) {
+      $output[] = $selector;
+    }
+  }
+  else {
+    $output = ['select[multiple]'];
+  }
+  return $output;
+}

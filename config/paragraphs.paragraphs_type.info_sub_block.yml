@@ -1,0 +1,9 @@
+uuid: ac1e6acc-dac7-433f-a5fc-404dcdba784a
+langcode: en
+status: true
+dependencies: {  }
+id: info_sub_block
+label: 'Info Sub Block'
+icon_uuid: null
+description: 'Sub-paragraph of info for Info Paragraph'
+behavior_plugins: {  }

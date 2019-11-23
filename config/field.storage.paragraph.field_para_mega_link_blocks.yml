@@ -1,0 +1,20 @@
+uuid: 2e243eb6-92b8-4fa8-ad43-86c5f62fe637
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_para_mega_link_blocks
+field_name: field_para_mega_link_blocks
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

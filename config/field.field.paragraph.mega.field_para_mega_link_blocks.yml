@@ -1,0 +1,79 @@
+uuid: 4ef4bd4e-07e5-45d8-964c-09a979665d44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_mega_link_blocks
+    - paragraphs.paragraphs_type.mega
+    - paragraphs.paragraphs_type.mega_link_block
+  module:
+    - entity_reference_revisions
+id: paragraph.mega.field_para_mega_link_blocks
+field_name: field_para_mega_link_blocks
+entity_type: paragraph
+bundle: mega
+label: 'Link blocks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mega_link_block: mega_link_block
+    target_bundles_drag_drop:
+      calendar_upcoming:
+        weight: 18
+        enabled: false
+      carousel:
+        weight: 19
+        enabled: false
+      contact_info:
+        weight: 20
+        enabled: false
+      grid_3:
+        weight: 21
+        enabled: false
+      hero_image:
+        weight: 22
+        enabled: false
+      hero_video:
+        weight: 23
+        enabled: false
+      icon_link:
+        weight: 24
+        enabled: false
+      instagram:
+        weight: 25
+        enabled: false
+      mega:
+        weight: 26
+        enabled: false
+      mega_link_block:
+        enabled: true
+        weight: 27
+      neighborhood:
+        weight: 28
+        enabled: false
+      news_nearby:
+        weight: 29
+        enabled: false
+      properties:
+        weight: 30
+        enabled: false
+      slide:
+        weight: 31
+        enabled: false
+      text_area:
+        weight: 32
+        enabled: false
+      view:
+        weight: 33
+        enabled: false
+      webform:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

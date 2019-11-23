@@ -1,0 +1,44 @@
+uuid: 31a3fccd-ccf0-4055-ae3b-ebe99001f550
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.lease_type.field_penta_icon
+    - taxonomy.vocabulary.lease_type
+  module:
+    - path
+    - text
+id: taxonomy_term.lease_type.default
+targetEntityType: taxonomy_term
+bundle: lease_type
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_penta_icon:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

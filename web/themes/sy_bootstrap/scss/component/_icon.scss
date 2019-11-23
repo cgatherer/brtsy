@@ -1,0 +1,1621 @@
+/**
+ * Icon styles.
+ */
+a {
+  &.icon-before .glyphicon,
+  & .glyphicon.icon-before {
+    margin-right: .25em;
+  }
+  &.icon-after .glyphicon,
+  & .glyphicon.icon-after {
+    margin-left: .25em;
+  }
+}
+
+.btn {
+  &.icon-before .glyphicon,
+  & .glyphicon.icon-before {
+    margin-left: -.25em; 
+    margin-right: .25em;
+  }
+  &.icon-after .glyphicon, 
+  & .glyphicon.icon-after {
+    margin-left: .25em;
+    margin-right: -.25em;
+  }
+}
+
+// Social Icons
+.sy-arrow {
+  height: 10px;
+  width: 7px;
+  display: inline-block;
+  -webkit-mask-image: url(../images/icn-arrow.svg);
+  background-color: $white;
+  @supports (-ms-ime-align: auto) {
+    background-image: url(../images/icn-arrow.svg);
+    background-color: transparent;
+  }
+
+  &--border {
+    padding: 2px 9px 3px;
+    border: solid 2px $white;
+    border-radius: 25px;
+    vertical-align: middle;
+    position: relative;
+    float: right;
+  }
+}
+
+// SY Icons
+.sy-icon-xl {
+  &--innovation {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/innovation.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/innovation.svg);
+    }
+  }
+  &--labs {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/labs.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/labs.svg);
+    }
+  }
+  &--office {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/office.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/office.svg);
+    }
+  }
+  &--residential {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/residential.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/residential.svg);
+    }
+  }
+  &--retail {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/retail.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/retail.svg);
+    }
+  }
+  &--hotel {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/hotel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/hotel.svg);
+    }
+  }
+  &--hotel-alt {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/hotel-alt.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/hotel-alt.svg);
+    }
+  }
+  &--education {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/education.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/education.svg);
+    }
+  }
+  &--cafe {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/cafe.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/cafe.svg);
+    }
+  }
+  &--activities {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/activities.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/activities.svg);
+    }
+  }
+  &--dining {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/dining.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/dining.svg);
+    }
+  }
+  &--travel {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/travel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/travel.svg);
+    }
+  }
+  &--parks {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/parks.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/parks.svg);
+    }
+  }
+  &--research {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/research.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/research.svg);
+    }
+  }
+  &--research-alt {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/research-alt.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/research-alt.svg);
+    }
+  }
+  &--outdoor {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/outdoor.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/outdoor.svg);
+    }
+  }
+  &--communication {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/communication.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/communication.svg);
+    }
+  }
+  &--drexel {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/drexel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/drexel.svg);
+    }
+  }
+  &--eagles {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/eagles.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/eagles.svg);
+    }
+  }
+  &--history {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/history.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/history.svg);
+    }
+  }
+  &--liberty-bell {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/liberty-bell.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/liberty-bell.svg);
+    }
+  }
+  &--ben-franklin {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/ben-franklin.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/ben-franklin.svg);
+    }
+  }
+  &--rocky {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/rocky.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/rocky.svg);
+    }
+  }
+  &--brotherly-love {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/brotherly-love.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/brotherly-love.svg);
+    }
+  }
+  &--seventy-sixers {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/76ers.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/76ers.svg);
+    }
+  }
+  &--philly-cheesesteak {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/cheese-steak.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/cheese-steak.svg);
+    }
+  }
+  &--penn-quaker {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/penn-quaker.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/penn-quaker.svg);
+    }
+  }
+  &--thirtieth-st-station {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/30th-st-station.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/30th-st-station.svg);
+    }
+  }
+  &--schuylkill-river {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/river.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/river.svg);
+    }
+  }
+  &--art-museum {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/art-museum.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/art-museum.svg);
+    }
+  }
+  &--liberty-place {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/liberty-place.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/liberty-place.svg);
+    }
+  }
+  &--tech {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/tech.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/tech.svg);
+    }
+  }
+  &--bulletin-building {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/bulletin-building.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/bulletin-building.svg);
+    }
+  }
+  &--buildings {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/buildings.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/buildings.svg);
+    }
+  }
+  &--nearby {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/nearby.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/nearby.svg);
+    }
+  }
+  &--instagram {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/instagram.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/instagram.svg);
+    }
+  }
+  &--sy-circle {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/sy-circle.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/sy-circle.svg);
+    }
+  }
+  &--sy-bradywine {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/sy-bradywine.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/sy-bradywine.svg);
+    }
+  }
+  &--life-science {
+    height: $sy-icons-xl;
+    width: $sy-icons-xl;
+    display: inline-block;
+    -webkit-mask-image: url(../images/life-science.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/life-science.svg);
+    }
+  }
+}
+
+.sy-icon-lg {
+  &--innovation {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/innovation.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/innovation.svg);
+    }
+  }
+  &--labs {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/labs.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/labs.svg);
+    }
+  }
+  &--office {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/office.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/office.svg);
+    }
+  }
+  &--residential {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/residential.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/residential.svg);
+    }
+  }
+  &--retail {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/retail.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/retail.svg);
+    }
+  }
+  &--hotel {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/hotel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/hotel.svg);
+    }
+  }
+  &--hotel-alt {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/hotel-alt.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/hotel-alt.svg);
+    }
+  }
+  &--education {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/education.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/education.svg);
+    }
+  }
+  &--cafe {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/cafe.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/cafe.svg);
+    }
+  }
+  &--activities {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/activities.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/activities.svg);
+    }
+  }
+  &--dining {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/dining.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/dining.svg);
+    }
+  }
+  &--travel {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/travel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/travel.svg);
+    }
+  }
+  &--parks {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/parks.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/parks.svg);
+    }
+  }
+  &--research {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/research.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/research.svg);
+    }
+  }
+  &--research-alt {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/research-alt.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/research-alt.svg);
+    }
+  }
+  &--outdoor {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/outdoor.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/outdoor.svg);
+    }
+  }
+  &--communication {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/communication.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/communication.svg);
+    }
+  }
+  &--drexel {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/drexel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/drexel.svg);
+    }
+  }
+  &--eagles {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/eagles.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/eagles.svg);
+    }
+  }
+  &--history {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/history.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/history.svg);
+    }
+  }
+  &--liberty-bell {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/liberty-bell.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/liberty-bell.svg);
+    }
+  }
+  &--ben-franklin {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/ben-franklin.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/ben-franklin.svg);
+    }
+  }
+  &--rocky {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/rocky.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/rocky.svg);
+    }
+  }
+  &--brotherly-love {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/brotherly-love.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/brotherly-love.svg);
+    }
+  }
+  &--seventy-sixers {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/76ers.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/76ers.svg);
+    }
+  }
+  &--philly-cheesesteak {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/cheese-steak.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/cheese-steak.svg);
+    }
+  }
+  &--penn-quaker {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/penn-quaker.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/penn-quaker.svg);
+    }
+  }
+  &--thirtieth-st-station {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/30th-st-station.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/30th-st-station.svg);
+    }
+  }
+  &--schuylkill-river {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/river.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/river.svg);
+    }
+  }
+  &--art-museum {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/art-museum.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/art-museum.svg);
+    }
+  }
+  &--liberty-place {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/liberty-place.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/liberty-place.svg);
+    }
+  }
+  &--tech {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/tech.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/tech.svg);
+    }
+  }
+  &--bulletin-building {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/bulletin-building.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/bulletin-building.svg);
+    }
+  }
+  &--buildings {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/buildings.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/buildings.svg);
+    }
+  }
+  &--nearby {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/nearby.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/nearby.svg);
+    }
+  }
+  &--instagram {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/instagram.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/instagram.svg);
+    }
+  }
+  &--sy-circle {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/sy-circle.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/sy-circle.svg);
+    }
+  }
+  &--sy-bradywine {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/sy-bradywine.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/sy-bradywine.svg);
+    }
+  }
+  &--life-science {
+    height: $sy-icons-lg;
+    width: $sy-icons-lg;
+    display: inline-block;
+    -webkit-mask-image: url(../images/life-science.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/life-science.svg);
+    }
+  }
+}
+
+.sy-icon-md {
+  &--innovation {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/innovation.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/innovation.svg);
+    }
+  }
+  &--labs {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/labs.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/labs.svg);
+    }
+  }
+  &--office {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/office.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/office.svg);
+    }
+  }
+  &--residential {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/residential.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/residential.svg);
+    }
+  }
+  &--retail {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/retail.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/retail.svg);
+    }
+  }
+  &--hotel {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/hotel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/hotel.svg);
+    }
+  }
+  &--hotel-alt {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/hotel-alt.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/hotel-alt.svg);
+    }
+  }
+  &--education {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/education.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/education.svg);
+    }
+  }
+  &--cafe {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/cafe.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/cafe.svg);
+    }
+  }
+  &--activities {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/activities.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/activities.svg);
+    }
+  }
+  &--dining {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/dining.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/dining.svg);
+    }
+  }
+  &--travel {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/travel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/travel.svg);
+    }
+  }
+  &--parks {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/parks.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/parks.svg);
+    }
+  }
+  &--research {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/research.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/research.svg);
+    }
+  }
+  &--research-alt {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/research-alt.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/research-alt.svg);
+    }
+  }
+  &--outdoor {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/outdoor.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/outdoor.svg);
+    }
+  }
+  &--communication {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/communication.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/communication.svg);
+    }
+  }
+  &--drexel {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/drexel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/drexel.svg);
+    }
+  }
+  &--eagles {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/eagles.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/eagles.svg);
+    }
+  }
+  &--history {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/history.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/history.svg);
+    }
+  }
+  &--liberty-bell {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/liberty-bell.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/liberty-bell.svg);
+    }
+  }
+  &--ben-franklin {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/ben-franklin.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/ben-franklin.svg);
+    }
+  }
+  &--rocky {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/rocky.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/rocky.svg);
+    }
+  }
+  &--brotherly-love {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/brotherly-love.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/brotherly-love.svg);
+    }
+  }
+  &--seventy-sixers {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/76ers.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/76ers.svg);
+    }
+  }
+  &--philly-cheesesteak {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/cheese-steak.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/cheese-steak.svg);
+    }
+  }
+  &--penn-quaker {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/penn-quaker.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/penn-quaker.svg);
+    }
+  }
+  &--thirtieth-st-station {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/30th-st-station.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/30th-st-station.svg);
+    }
+  }
+  &--schuylkill-river {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/river.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/river.svg);
+    }
+  }
+  &--art-museum {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/art-museum.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/art-museum.svg);
+    }
+  }
+  &--liberty-place {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/liberty-place.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/liberty-place.svg);
+    }
+  }
+  &--tech {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/tech.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/tech.svg);
+    }
+  }
+  &--bulletin-building {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/bulletin-building.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/bulletin-building.svg);
+    }
+  }
+  &--buildings {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/buildings.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/buildings.svg);
+    }
+  }
+  &--nearby {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/nearby.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/nearby.svg);
+    }
+  }
+  &--instagram {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/instagram.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/instagram.svg);
+    }
+  }
+  &--sy-circle {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/sy-circle.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/sy-circle.svg);
+    }
+  }
+  &--sy-bradywine {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/sy-bradywine.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/sy-bradywine.svg);
+    }
+  }
+  &--life-science {
+    height: $sy-icons-md;
+    width: $sy-icons-md;
+    display: inline-block;
+    -webkit-mask-image: url(../images/life-science.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/life-science.svg);
+    }
+  }
+}
+
+.sy-icon-sm {
+  &--innovation {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/innovation.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/innovation.svg);
+    }
+  }
+  &--labs {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/labs.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/labs.svg);
+    }
+  }
+  &--office {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/office.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/office.svg);
+    }
+  }
+  &--residential {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/residential.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/residential.svg);
+    }
+  }
+  &--retail {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/retail.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/retail.svg);
+    }
+  }
+  &--hotel {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/hotel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/hotel.svg);
+    }
+  }
+  &--hotel-alt {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/hotel-alt.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/hotel-alt.svg);
+    }
+  }
+  &--education {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/education.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/cafe.svg);
+    }
+  }
+  &--cafe {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/cafe.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/cafe.svg);
+    }
+  }
+  &--activities {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/activities.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/activities.svg);
+    }
+  }
+  &--dining {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/dining.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/dining.svg);
+    }
+  }
+  &--travel {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/travel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/travel.svg);
+    }
+  }
+  &--parks {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/parks.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/parks.svg);
+    }
+  }
+  &--research {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/research.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/research.svg);
+    }
+  }
+  &--research-alt {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/research-alt.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/research-alt.svg);
+    }
+  }
+  &--outdoor {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/outdoor.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/outdoor.svg);
+    }
+  }
+  &--communication {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/communication.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/communication.svg);
+    }
+  }
+  &--drexel {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/drexel.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/drexel.svg);
+    }
+  }
+  &--eagles {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/eagles.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/eagles.svg);
+    }
+  }
+  &--history {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/history.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/history.svg);
+    }
+  }
+  &--liberty-bell {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/liberty-bell.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/liberty-bell.svg);
+    }
+  }
+  &--ben-franklin {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/ben-franklin.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/ben-franklin.svg);
+    }
+  }
+  &--rocky {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/rocky.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/rocky.svg);
+    }
+  }
+  &--brotherly-love {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/brotherly-love.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/brotherly-love.svg);
+    }
+  }
+  &--seventy-sixers {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/76ers.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/76ers.svg);
+    }
+  }
+  &--philly-cheesesteak {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/cheese-steak.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/cheese-steak.svg);
+    }
+  }
+  &--penn-quaker {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/penn-quaker.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/penn-quaker.svg);
+    }
+  }
+  &--thirtieth-st-station {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/30th-st-station.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/30th-st-station.svg);
+    }
+  }
+  &--schuylkill-river {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/river.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/river.svg);
+    }
+  }
+  &--art-museum {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/art-museum.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/art-museum.svg);
+    }
+  }
+  &--liberty-place {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/liberty-place.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/liberty-place.svg);
+    }
+  }
+  &--tech {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/tech.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/tech.svg);
+    }
+  }
+  &--bulletin-building {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/bulletin-building.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/bulletin-building.svg);
+    }
+  }
+  &--buildings {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/buildings.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/buildings.svg);
+    }
+  }
+  &--nearby {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/nearby.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/nearby.svg);
+    }
+  }
+  &--instagram {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/instagram.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/instagram.svg);
+    }
+  }
+  &--sy-circle {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/sy-circle.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/sy-circle.svg);
+    }
+  }
+  &--sy-bradywine {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/sy-bradywine.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/sy-bradywine.svg);
+    }
+  }
+  &--life-science {
+    height: $sy-icons-sm;
+    width: $sy-icons-sm;
+    display: inline-block;
+    -webkit-mask-image: url(../images/life-science.svg);
+    -webkit-mask-repeat: no-repeat;
+    @supports (-ms-ime-align: auto) {
+      background-image: url(../images/life-science.svg);
+    }
+  }
+}

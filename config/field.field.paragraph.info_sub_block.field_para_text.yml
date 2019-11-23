@@ -1,0 +1,21 @@
+uuid: a672833b-c1a5-46ef-b7e6-ed508dd7d81c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_text
+    - paragraphs.paragraphs_type.info_sub_block
+  module:
+    - text
+id: paragraph.info_sub_block.field_para_text
+field_name: field_para_text
+entity_type: paragraph
+bundle: info_sub_block
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

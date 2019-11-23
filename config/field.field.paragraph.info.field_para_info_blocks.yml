@@ -1,0 +1,85 @@
+uuid: 6947f131-a7a8-43df-bb31-680b016cff6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_info_blocks
+    - paragraphs.paragraphs_type.info
+    - paragraphs.paragraphs_type.info_sub_block
+  module:
+    - entity_reference_revisions
+id: paragraph.info.field_para_info_blocks
+field_name: field_para_info_blocks
+entity_type: paragraph
+bundle: info
+label: 'Info Blocks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      info_sub_block: info_sub_block
+    target_bundles_drag_drop:
+      block:
+        weight: 20
+        enabled: false
+      carousel:
+        weight: 21
+        enabled: false
+      column_2:
+        weight: 22
+        enabled: false
+      contact_info:
+        weight: 23
+        enabled: false
+      grid_3:
+        weight: 24
+        enabled: false
+      hero_image:
+        weight: 25
+        enabled: false
+      hero_video:
+        weight: 26
+        enabled: false
+      icon_link:
+        weight: 27
+        enabled: false
+      info:
+        weight: 28
+        enabled: false
+      info_sub_block:
+        enabled: true
+        weight: 29
+      mega:
+        weight: 30
+        enabled: false
+      mega_link_block:
+        weight: 31
+        enabled: false
+      news_nearby:
+        weight: 32
+        enabled: false
+      slide:
+        weight: 33
+        enabled: false
+      text_area:
+        weight: 34
+        enabled: false
+      text_with_sidebar:
+        weight: 35
+        enabled: false
+      venue:
+        weight: 36
+        enabled: false
+      view:
+        weight: 37
+        enabled: false
+      webform:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

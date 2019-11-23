@@ -1,0 +1,74 @@
+uuid: 60010cdc-a1fd-4153-8bb1-89518b851818
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mega.field_para_fluid_container
+    - field.field.paragraph.mega.field_para_mega_link_blocks
+    - field.field.paragraph.mega.field_para_more
+    - field.field.paragraph.mega.field_para_penta_icon
+    - field.field.paragraph.mega.field_para_secondary_color
+    - field.field.paragraph.mega.field_para_title
+    - paragraphs.paragraphs_type.mega
+  module:
+    - link
+    - paragraphs
+    - select_or_other
+id: paragraph.mega.default
+targetEntityType: paragraph
+bundle: mega
+mode: default
+content:
+  field_para_fluid_container:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_para_mega_link_blocks:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_para_more:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_para_penta_icon:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_para_secondary_color:
+    weight: 1
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

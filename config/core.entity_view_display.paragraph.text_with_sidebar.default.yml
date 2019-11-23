@@ -1,0 +1,63 @@
+uuid: 72f361e8-ebe4-4ee1-b7e8-32cc4f410f8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_sidebar.field_para_contacts
+    - field.field.paragraph.text_with_sidebar.field_para_downloads
+    - field.field.paragraph.text_with_sidebar.field_para_penta_icon
+    - field.field.paragraph.text_with_sidebar.field_para_secondary_color
+    - field.field.paragraph.text_with_sidebar.field_para_text
+    - field.field.paragraph.text_with_sidebar.field_para_title
+    - paragraphs.paragraphs_type.text_with_sidebar
+  module:
+    - entity_reference_revisions
+    - file
+    - options
+    - text
+id: paragraph.text_with_sidebar.default
+targetEntityType: paragraph
+bundle: text_with_sidebar
+mode: default
+content:
+  field_para_contacts:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_para_downloads:
+    weight: 4
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_para_penta_icon:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_para_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_para_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_para_secondary_color: true

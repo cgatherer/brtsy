@@ -1,0 +1,22 @@
+uuid: 10f51c15-8a3a-44e6-b27e-be769f86ad1d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: lease_space
+label: 'Lease space'
+type: 'canonical_entities:node'
+pattern: 'lease-space/[node:title]'
+selection_criteria:
+  36d1965e-4318-43ba-a41f-4d517850bb14:
+    id: node_type
+    bundles:
+      building: building
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 36d1965e-4318-43ba-a41f-4d517850bb14
+selection_logic: and
+weight: -5
+relationships: {  }

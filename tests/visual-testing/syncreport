@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Sync the report to test.i-site.com. Call this script on Mac CLI, do not prefix command with lando
+# for a new project, change the final dir name and update /home/isite/test/index.html with a link
+
+rsync -avzh --delete backstop_data root@216.70.112.218:/home/isite/hosting/test/brtsy/

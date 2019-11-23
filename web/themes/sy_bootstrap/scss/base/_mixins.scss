@@ -1,0 +1,488 @@
+/* ==========================================
+    @Mixins
+=========================================== */
+
+@mixin clear-center($axis: "both") {
+    position: relative;
+    @if $axis=="y" {
+        top: 0%;
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+    @if $axis=="x" {
+        left: 0%;
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    @if $axis=="both" {
+        top: 0%;
+        left: 0%;
+        -webkit-transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+    }
+}
+
+@mixin center($axis: "both") {
+    position: absolute;
+    @if $axis=="y" {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    @if $axis=="x" {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    @if $axis=="both" {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin center-menu($xy:xy) {
+    @if $xy == xy {
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        right: auto;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    @else if $xy == x {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+
+    @else if $xy == y {
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+    }
+}
+
+.center {
+    @include center;
+    width: 100%;
+    max-width: $max-width;
+
+    &--container {
+        position: absolute;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        height: 100%;
+        background: none;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-height: $sixplus) {
+    .clear-center {
+        @include clear-center;
+        margin-bottom: $margin * 2!important;
+    }
+}
+
+@mixin clearfix {
+    zoom: 1;
+    &:before,
+    &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.clearfix,
+.header,
+.center,
+.container,
+.group,
+.grid {
+    @include clearfix;
+}
+
+// Antialiasing mode font rendering
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Fonts
+@mixin Headings {
+    font-family: 'LTCCaslonPro', serif !important;
+}
+
+@mixin H01 {
+    font-family: 'LTCCaslonPro', serif !important;
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.02;
+    letter-spacing: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: $white;
+}
+
+@mixin H02 {
+    font-family: 'LTCCaslonPro', serif !important;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.02;
+    letter-spacing: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: $white;
+}
+
+@mixin H03 {
+    font-family: 'LTCCaslonPro', serif !important;
+    font-size: 2.3rem;
+    font-weight: 300;
+    line-height: 1.02;
+    letter-spacing: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: $white;
+}
+
+@mixin H04 {
+    font-family: 'LTCCaslonPro', serif !important;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: $white;
+}
+
+@mixin Paragraph {
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: $white;
+}
+
+// Responsive Break points
+@mixin atTiny {
+    @media screen and (min-width: $tiny-break) {
+        @content;
+    }
+}
+
+@mixin atTinyMax {
+    @media screen and (max-width: $tiny-break) {
+        @content;
+    }
+}
+
+@mixin atSixplus {
+    @media screen and (min-width: $sixplus) {
+        @content;
+    }
+}
+
+@mixin atSixplusMax {
+    @media screen and (max-width: $sixplus) {
+        @content;
+    }
+}
+
+@mixin atSmall {
+    @media screen and (min-width: $small-break) {
+        @content;
+    }
+}
+
+@mixin atSmallMax {
+    @media screen and (max-width: $small-break) {
+        @content;
+    }
+}
+
+@mixin atMedium {
+    @media screen and (min-width: $medium-break) {
+        @content;
+    }
+}
+
+@mixin atMediumMax {
+    @media screen and (max-width: $medium-max-break) {
+        @content;
+    }
+}
+
+@mixin atLarge {
+    @media screen and (min-width: $big-break) {
+        @content;
+    }
+}
+
+@mixin atLargeMax {
+    @media screen and (max-width: $big-break) {
+        @content;
+    }
+}
+
+@mixin atXlarge {
+    @media screen and (min-width: $max-width) {
+        @content;
+    }
+}
+
+@mixin atXlargeMax {
+    @media screen and (max-width: $min-max-width) {
+        @content;
+    }
+}
+
+@mixin atBmax {
+    @media screen and (min-width: $bmax) {
+        @content;
+    }
+}
+
+@mixin truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin shadow {
+    box-shadow: $silver 1px 1px 3px;
+}
+
+@mixin box-shadow {
+    box-shadow: $base-box-shadow;
+}
+
+@mixin border-radius {
+    border-radius: $br;
+}
+
+@mixin transition {
+    transition: $base-transition;
+}
+
+@mixin transition-in-out {
+    transition: $easeInOut-transition;
+}
+
+@mixin text-shadow {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+// Material design Shadow
+@mixin shadow($level: 0) {
+    @if $level==0 {
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+    @else if $level==1 {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+    @else if $level==2 {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+    @else if $level==3 {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    @else if $level==4 {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    @else if $level==5 {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+}
+
+@mixin box-shadow {
+    box-shadow: $black 2px 2px 3px;
+}
+
+// lets make some classes to quickly apply to block elements
+.shadow-0 {
+    display: block;
+    @include shadow(0);
+}
+
+.shadow-1 {
+    display: block;
+    @include shadow(1);
+}
+
+.shadow-2 {
+    display: block;
+    @include shadow(2);
+}
+
+.shadow-3 {
+    display: block;
+    @include shadow(3);
+}
+
+.shadow-4 {
+    display: block;
+    @include shadow(4);
+}
+
+.shadow-5 {
+    display: block;
+    @include shadow(5);
+}
+
+.shadow-hover {
+    display: block;
+    transition: all 250ms;
+    @include shadow;
+    // @include transition(all 250ms);
+    &:hover {
+        @include shadow(2);
+        cursor: pointer;
+    }
+}
+
+// Image Grid
+@mixin imagegrid($qty, $margin) {
+    width: ((100% - (($qty - 1) * $margin))/$qty);
+    &:nth-child(n) {
+        margin-right: $margin;
+        margin-bottom: $margin;
+    }
+    &:nth-child(#{$qty}n) {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+// Table row count
+@mixin row-count {
+    td:first-child::before {
+        content: counter(rowNumber, decimal);
+        min-width: 1em;
+        margin-right: 0.5em;
+        font-weight: bold;
+    }
+}
+
+.row-count {
+    @include row-count;
+}
+
+// Parallax mixins
+$parallax-perspective : 1 !default;
+$parallax-element     : "body" !default;
+$parallax-ios         : true !default;
+
+@mixin parallax-init(
+  $perspective  : $parallax-perspective,
+  $element      : $parallax-element,
+  $parallax-ios : $parallax-ios
+  ) {
+  @if $element == "body" {
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  }
+  #{$element} {
+    overflow: auto;
+    perspective: $perspective * 1px;
+    transform-style: preserve-3d;
+    // Allows for smooth scrolling but disables parallax effects.
+    @if $parallax-ios == false {
+      -webkit-overflow-scrolling: touch;
+    }
+    // Preserve 3D
+    &, * {
+      transform-style: preserve-3d;
+    }
+  }
+}
+
+@mixin parallax(
+  $distance    : 0,
+  $perspective : $parallax-perspective
+  ) {
+  transform:
+    translateZ($distance * $perspective * 1px)
+    scale(abs($distance - 1))
+  ;
+  z-index: $distance * 1000;
+}
+
+// Quantity Queries
+@mixin quantity-query( $number, $comparison: 'equal' ) {
+  $nth: '';
+  
+  @if index( ('greater' 'more' '>'), $comparison ) {
+    $nth: 'n + #{$number}';
+  } @else if index( ('less' 'fewer' '<'), $comparison ) {
+    $nth: '-n + #{$number}';
+  } @else if index( ('equal' 'same' '='), $comparison ) {
+    $nth: $number;
+  } @else {
+    @warn "Sorry, that's an invalid $comparison value."
+  }
+  
+  &:nth-last-child(#{$nth}):first-child {
+    &,
+    & ~ * {
+      @content;
+    }
+  }
+}
+
+// Equal 
+@mixin qq-equal( $number ) {
+  @include quantity-query( $number, equal ) {
+    @content;
+  }
+}
+
+// Greater Than
+@mixin qq-greater( $number ) {
+  @include quantity-query( $number, greater ) {
+    @content;
+  }
+}
+
+// Less Than
+@mixin qq-less( $number ) {
+  @include quantity-query( $number, less ) {
+    @content;
+  }
+}

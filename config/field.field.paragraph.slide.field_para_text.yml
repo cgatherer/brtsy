@@ -1,0 +1,21 @@
+uuid: ff7507d3-de7b-450f-8596-9d1c9f07ba18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_text
+    - paragraphs.paragraphs_type.slide
+  module:
+    - text
+id: paragraph.slide.field_para_text
+field_name: field_para_text
+entity_type: paragraph
+bundle: slide
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

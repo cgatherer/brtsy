@@ -1,0 +1,9 @@
+uuid: 9ad42c90-afa8-4a32-8820-c0235cd2f87c
+langcode: en
+status: true
+dependencies: {  }
+id: mega_link_block
+label: 'Mega link block'
+icon_uuid: null
+description: 'Sub-paragraph of the Mega'
+behavior_plugins: {  }

@@ -1,0 +1,9 @@
+uuid: b6a7f42f-268d-4ec9-861a-042a5e1bf00d
+langcode: en
+status: true
+dependencies: {  }
+id: block
+label: Block
+icon_uuid: null
+description: 'Select a Drupal block to display'
+behavior_plugins: {  }

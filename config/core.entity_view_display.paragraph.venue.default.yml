@@ -1,0 +1,75 @@
+uuid: 6dfce986-76b5-4582-bdd4-a9f91d6239fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.venue.field_para_hero_image
+    - field.field.paragraph.venue.field_para_location
+    - field.field.paragraph.venue.field_para_more
+    - field.field.paragraph.venue.field_para_text
+    - field.field.paragraph.venue.field_para_title
+    - field.field.paragraph.venue.field_short_address
+    - image.style.max_650x650
+    - paragraphs.paragraphs_type.venue
+  module:
+    - image
+    - link
+    - text
+id: paragraph.venue.default
+targetEntityType: paragraph
+bundle: venue
+mode: default
+content:
+  field_para_hero_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: max_650x650
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_para_location:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_para_more:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_para_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_para_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_short_address:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

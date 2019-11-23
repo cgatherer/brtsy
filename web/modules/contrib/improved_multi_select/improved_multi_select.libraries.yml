@@ -1,0 +1,12 @@
+ims:
+  version: VERSION
+  css:
+    theme:
+      improved_multi_select.css: {}
+  js:
+    improved_multi_select.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings

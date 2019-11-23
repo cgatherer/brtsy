@@ -1,0 +1,9 @@
+uuid: 968fce81-3b18-4fe5-beee-c3ec41c89023
+langcode: en
+status: true
+dependencies: {  }
+id: grid_3
+label: 'Grid 3'
+icon_uuid: null
+description: 'Arrangement of Three Slide paragraphs'
+behavior_plugins: {  }

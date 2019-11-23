@@ -1,0 +1,21 @@
+uuid: 9b43df9e-63f6-4443-8a76-3e20ac778d52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_color
+    - paragraphs.paragraphs_type.webform
+  module:
+    - options
+id: paragraph.webform.field_para_color
+field_name: field_para_color
+entity_type: paragraph
+bundle: webform
+label: Color
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

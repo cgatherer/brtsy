@@ -1,0 +1,35 @@
+uuid: 8d663e55-37ac-4fd8-ade9-de099eb4009e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.info_sub_block.field_para_text
+    - field.field.paragraph.info_sub_block.field_para_title
+    - paragraphs.paragraphs_type.info_sub_block
+  module:
+    - text
+id: paragraph.info_sub_block.default
+targetEntityType: paragraph
+bundle: info_sub_block
+mode: default
+content:
+  field_para_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_para_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

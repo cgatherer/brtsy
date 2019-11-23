@@ -1,0 +1,9 @@
+uuid: 02f391d9-37f7-4c79-a01f-f2c75c69c4ec
+langcode: en
+status: true
+dependencies: {  }
+id: info
+label: Info
+icon_uuid: null
+description: 'text with informational blocks below, optionally with image behind them. '
+behavior_plugins: {  }

@@ -1,0 +1,15 @@
+uuid: ee24a869-bb4b-4ae3-8d84-e80c30e50d01
+langcode: en
+status: true
+dependencies: {  }
+name: whats_happening
+label: 'What''s Happening'
+effects:
+  3a35b298-be6a-4b8b-9a2a-d2a59699ef69:
+    uuid: 3a35b298-be6a-4b8b-9a2a-d2a59699ef69
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 380
+      height: 250
+      anchor: center-center

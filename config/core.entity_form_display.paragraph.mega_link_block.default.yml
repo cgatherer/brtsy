@@ -1,0 +1,65 @@
+uuid: c32f63ee-e7dc-462b-941c-e73749a0beda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mega_link_block.field_para_background_color
+    - field.field.paragraph.mega_link_block.field_para_hero_image
+    - field.field.paragraph.mega_link_block.field_para_more
+    - field.field.paragraph.mega_link_block.field_para_secondary_color
+    - field.field.paragraph.mega_link_block.field_para_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.mega_link_block
+  module:
+    - image
+    - link
+    - select_or_other
+id: paragraph.mega_link_block.default
+targetEntityType: paragraph
+bundle: mega_link_block
+mode: default
+content:
+  field_para_background_color:
+    weight: 1
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_hero_image:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_para_more:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_para_secondary_color:
+    weight: 3
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

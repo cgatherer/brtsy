@@ -1,0 +1,75 @@
+uuid: 64885d38-e0f9-4abd-96ef-884862a85a98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.view.field_para_fluid_container
+    - field.field.paragraph.view.field_para_more
+    - field.field.paragraph.view.field_para_penta_icon
+    - field.field.paragraph.view.field_para_secondary_color
+    - field.field.paragraph.view.field_para_title
+    - field.field.paragraph.view.field_para_view
+    - paragraphs.paragraphs_type.view
+  module:
+    - link
+    - options
+    - viewsreference
+id: paragraph.view.default
+targetEntityType: paragraph
+bundle: view
+mode: default
+content:
+  field_para_fluid_container:
+    weight: 1
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_para_more:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_para_penta_icon:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_para_secondary_color:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_para_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_para_view:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden: {  }

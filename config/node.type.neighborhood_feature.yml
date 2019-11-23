@@ -1,0 +1,17 @@
+uuid: aec3a8b9-1459-425c-9d43-c56a0e0e7f1d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Neighborhood feature'
+type: neighborhood_feature
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

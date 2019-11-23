@@ -1,0 +1,89 @@
+uuid: ab42da86-2435-4bdf-b1db-6c5bc6f6109b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_video.field_para_fluid_container
+    - field.field.paragraph.hero_video.field_para_fullscreen_takeover
+    - field.field.paragraph.hero_video.field_para_icon_link
+    - field.field.paragraph.hero_video.field_para_text
+    - field.field.paragraph.hero_video.field_para_title
+    - field.field.paragraph.hero_video.field_para_video_embed
+    - field.field.paragraph.hero_video.field_video_only
+    - paragraphs.paragraphs_type.hero_video
+  module:
+    - paragraphs
+    - text
+id: paragraph.hero_video.default
+targetEntityType: paragraph
+bundle: hero_video
+mode: default
+content:
+  field_para_fluid_container:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_para_fullscreen_takeover:
+    weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_para_icon_link:
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: icon_link
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_para_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_para_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_para_video_embed:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_video_only:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

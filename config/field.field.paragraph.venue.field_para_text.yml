@@ -1,0 +1,21 @@
+uuid: d6bb0dcd-0c40-4ef6-8f96-1dc887f22c7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_text
+    - paragraphs.paragraphs_type.venue
+  module:
+    - text
+id: paragraph.venue.field_para_text
+field_name: field_para_text
+entity_type: paragraph
+bundle: venue
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 9c8ff975-9096-4b80-a7c1-8b46ae7f1afd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sy_bootstrap
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: sy_bootstrap_content
+theme: sy_bootstrap
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 9d5a7acd-f8fd-45c0-bfef-cbfa34b5709c
+langcode: en
+status: true
+dependencies: {  }
+id: carousel
+label: Carousel
+icon_uuid: null
+description: 'Add other paragraphs to a carousel!'
+behavior_plugins: {  }

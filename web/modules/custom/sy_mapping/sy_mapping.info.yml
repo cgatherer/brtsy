@@ -1,0 +1,4 @@
+name: SY Mapping
+description: Custom Schuylkill Yards mapping code
+core: 8.x
+type: module

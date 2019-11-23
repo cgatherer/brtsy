@@ -1,0 +1,21 @@
+uuid: 98362f29-05c1-4d33-a761-f451b3cc9e20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_secondary_color
+    - paragraphs.paragraphs_type.mega_link_block
+  module:
+    - options
+id: paragraph.mega_link_block.field_para_secondary_color
+field_name: field_para_secondary_color
+entity_type: paragraph
+bundle: mega_link_block
+label: 'Overlay color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

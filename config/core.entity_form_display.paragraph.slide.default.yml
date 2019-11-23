@@ -1,0 +1,117 @@
+uuid: a469fe3e-6c71-4350-a44e-8a3cda282a0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide.field_para_background_color
+    - field.field.paragraph.slide.field_para_color
+    - field.field.paragraph.slide.field_para_hero_image
+    - field.field.paragraph.slide.field_para_icon
+    - field.field.paragraph.slide.field_para_more
+    - field.field.paragraph.slide.field_para_penta_icon
+    - field.field.paragraph.slide.field_para_secondary_color
+    - field.field.paragraph.slide.field_para_text
+    - field.field.paragraph.slide.field_para_title
+    - field.field.paragraph.slide.field_para_use_overlay
+    - field.field.paragraph.slide.field_para_vimeo_code
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.slide
+  module:
+    - fontawesome
+    - image
+    - link_target
+    - select_or_other
+    - text
+id: paragraph.slide.default
+targetEntityType: paragraph
+bundle: slide
+mode: default
+content:
+  field_para_background_color:
+    weight: 8
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_color:
+    weight: 6
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_hero_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_para_icon:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+  field_para_more:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      link_target: ''
+    third_party_settings: {  }
+    type: link_target_field_widget
+    region: content
+  field_para_penta_icon:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_para_secondary_color:
+    weight: 7
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_text:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_para_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_para_use_overlay:
+    weight: 9
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_para_vimeo_code:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

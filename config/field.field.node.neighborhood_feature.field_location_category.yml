@@ -1,0 +1,29 @@
+uuid: 142310e1-bd9f-4dd5-abe9-59b3f61b16e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_category
+    - node.type.neighborhood_feature
+    - taxonomy.vocabulary.location
+id: node.neighborhood_feature.field_location_category
+field_name: field_location_category
+entity_type: node
+bundle: neighborhood_feature
+label: 'Location Category'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

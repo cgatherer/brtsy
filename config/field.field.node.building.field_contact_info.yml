@@ -1,0 +1,70 @@
+uuid: d4919e30-434f-4158-bcea-a55cadc1c71e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_info
+    - node.type.building
+    - paragraphs.paragraphs_type.contact_info
+  module:
+    - entity_reference_revisions
+id: node.building.field_contact_info
+field_name: field_contact_info
+entity_type: node
+bundle: building
+label: 'Contact Info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contact_info: contact_info
+    target_bundles_drag_drop:
+      calendar_upcoming:
+        weight: 15
+        enabled: false
+      carousel:
+        weight: 16
+        enabled: false
+      contact_info:
+        enabled: true
+        weight: 17
+      grid_3:
+        weight: 18
+        enabled: false
+      hero_image:
+        weight: 19
+        enabled: false
+      hero_video:
+        weight: 20
+        enabled: false
+      icon_link:
+        weight: 21
+        enabled: false
+      instagram:
+        weight: 22
+        enabled: false
+      neighborhood:
+        weight: 23
+        enabled: false
+      news_nearby:
+        weight: 24
+        enabled: false
+      properties:
+        weight: 25
+        enabled: false
+      slide:
+        weight: 26
+        enabled: false
+      text_area:
+        weight: 27
+        enabled: false
+      view:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

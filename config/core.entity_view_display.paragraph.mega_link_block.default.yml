@@ -1,0 +1,52 @@
+uuid: 03623f31-dfe0-4fd0-b3ac-afe01937fed1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mega_link_block.field_para_background_color
+    - field.field.paragraph.mega_link_block.field_para_hero_image
+    - field.field.paragraph.mega_link_block.field_para_more
+    - field.field.paragraph.mega_link_block.field_para_secondary_color
+    - field.field.paragraph.mega_link_block.field_para_title
+    - image.style.max_1300x1300
+    - paragraphs.paragraphs_type.mega_link_block
+  module:
+    - image
+    - link
+id: paragraph.mega_link_block.default
+targetEntityType: paragraph
+bundle: mega_link_block
+mode: default
+content:
+  field_para_hero_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: max_1300x1300
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_para_more:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_para_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_para_background_color: true
+  field_para_secondary_color: true

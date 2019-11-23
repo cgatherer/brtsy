@@ -1,0 +1,18 @@
+uuid: af85331d-5af6-4988-8086-09f62a7a2d95
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_para_fullscreen_takeover
+field_name: field_para_fullscreen_takeover
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

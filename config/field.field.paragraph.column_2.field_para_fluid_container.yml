@@ -1,0 +1,23 @@
+uuid: 3c1ac13f-05f8-40f5-8472-f3f1a80de425
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_fluid_container
+    - paragraphs.paragraphs_type.column_2
+id: paragraph.column_2.field_para_fluid_container
+field_name: field_para_fluid_container
+entity_type: paragraph
+bundle: column_2
+label: 'Fluid Container'
+description: 'If checked, the paragraph will be the full width of the browser viewport.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

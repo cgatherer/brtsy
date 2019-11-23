@@ -1,0 +1,21 @@
+uuid: fab43611-3fb0-46c1-a89c-c1b1ccd95c8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_orientation
+    - paragraphs.paragraphs_type.grid_3
+  module:
+    - options
+id: paragraph.grid_3.field_para_orientation
+field_name: field_para_orientation
+entity_type: paragraph
+bundle: grid_3
+label: Orientation
+description: 'Biggest left or right'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

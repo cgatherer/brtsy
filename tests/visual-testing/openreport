@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# open the report. Call this script on Mac CLI, do not prefix command with lando
+/usr/bin/open -a "/Applications/Google Chrome.app" 'backstop_data/html_report/index.html'

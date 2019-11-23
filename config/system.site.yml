@@ -1,0 +1,15 @@
+uuid: 0f0c9043-d245-47e2-aec7-070faa15423a
+name: 'Schuylkill Yards'
+mail: info@schuylkillyards.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/6
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

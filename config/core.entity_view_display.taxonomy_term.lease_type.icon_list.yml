@@ -1,0 +1,24 @@
+uuid: 624aff2a-31e5-4958-84de-b286253594b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.icon_list
+    - field.field.taxonomy_term.lease_type.field_penta_icon
+    - taxonomy.vocabulary.lease_type
+  module:
+    - options
+id: taxonomy_term.lease_type.icon_list
+targetEntityType: taxonomy_term
+bundle: lease_type
+mode: icon_list
+content:
+  field_penta_icon:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden:
+  description: true

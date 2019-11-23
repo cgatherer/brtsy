@@ -1,0 +1,23 @@
+uuid: a12332b4-8b7a-40d4-9236-a3bf02627593
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_more
+    - paragraphs.paragraphs_type.venue
+  module:
+    - link
+id: paragraph.venue.field_para_more
+field_name: field_para_more
+entity_type: paragraph
+bundle: venue
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

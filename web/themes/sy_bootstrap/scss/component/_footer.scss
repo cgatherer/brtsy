@@ -1,0 +1,116 @@
+/* ==========================================
+    @Footer
+=========================================== */ 
+
+// Footer.
+.footer {
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+  	background-color: $sapphire;
+    &--logo {
+		display: block;
+		text-indent: -9999px;
+		width: 174px;
+		height: 69px;
+		background: url(../images/BW_white_h_logo.svg);
+		background-size: 174px 69px;
+		margin: 0 45px 0 0;
+		@media (min-width: 768px) {
+    		width: 100%;
+    		background-repeat: no-repeat;
+    		background-position: 50%;
+		}
+	}
+	.nav > li > a {
+		position: relative;
+		display: block;
+		color: $white;
+		font-size: 14px;
+		padding-top: 1.75rem;
+		padding-bottom: 1.75rem;
+		transition: all .3s ease-in-out;
+		&:hover {
+			background: $sapphire;
+			color: $capri;
+		}
+	}
+	.navbar-right {
+		@media (min-width: 768px) {
+		    float: none !important;
+		    text-align: center;
+		    margin: 0 auto;
+		    max-width: 230px;
+		}
+		li {
+			a {
+		      	display: inline;
+		      	float: left;
+			}
+		}
+	}
+	&--Copyright {
+		color: $white !important;
+    	font-size: 14px;
+    	padding: 15px 5px;
+    	text-align: center;
+	}
+	&--footer {
+	    margin-top: 0px;
+	    margin-bottom: 0px;
+	    padding: 5px 0;
+	    display: flex;
+	    float: left;
+	    li {
+	      padding:0 5px;
+	       	a {
+	       		color: $white !important;
+	       		font-size: 10px;
+	       		padding: 10px 5px !important;
+	       	}
+	    }
+	}
+
+	&--mobile {
+		display: none;
+		visibility: hidden;
+		@include atMediumMax {
+			display: block;
+			visibility: visible;
+		}
+	}
+
+	&--desktop {
+		display: block;
+		visibility: visible;
+		@include atMediumMax {
+			display: none;
+			visibility: hidden;
+		}	
+	}
+}
+.to-top-arrow {
+    position: fixed;
+    right: 20px;
+    bottom: 150px;
+    width: 50px;
+    height: 50px;
+    line-height: 47px;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    background: $capri;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    border-radius: 3px;
+    transform: translateY(40px);
+    transition: all .6s ease-in-out;
+    box-shadow: 0 0 15px 0 rgba(25, 43, 79, 0.55);
+    z-index: 2000;
+    @include atMediumMax {
+    	bottom: 60px;
+    }
+    &--show {
+    	opacity: 1;
+    }
+}

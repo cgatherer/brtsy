@@ -1,0 +1,23 @@
+uuid: 2ceeeebd-56e5-4d6c-a913-922e80b1fe07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_only
+    - paragraphs.paragraphs_type.icon_link
+id: paragraph.icon_link.field_link_only
+field_name: field_link_only
+entity_type: paragraph
+bundle: icon_link
+label: 'Link Only'
+description: 'Click only if you want to use link without icons.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

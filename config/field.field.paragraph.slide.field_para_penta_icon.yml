@@ -1,0 +1,21 @@
+uuid: 856258a7-e962-4aad-869b-7385ccd96fd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_penta_icon
+    - paragraphs.paragraphs_type.slide
+  module:
+    - options
+id: paragraph.slide.field_para_penta_icon
+field_name: field_para_penta_icon
+entity_type: paragraph
+bundle: slide
+label: 'Penta Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

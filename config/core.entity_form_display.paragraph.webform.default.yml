@@ -1,0 +1,51 @@
+uuid: c8b14b9f-3097-42b6-9b25-b3dc6b614a55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform.field_para_color
+    - field.field.paragraph.webform.field_para_penta_icon
+    - field.field.paragraph.webform.field_para_title
+    - field.field.paragraph.webform.field_para_webform
+    - paragraphs.paragraphs_type.webform
+  module:
+    - select_or_other
+    - webform
+id: paragraph.webform.default
+targetEntityType: paragraph
+bundle: webform
+mode: default
+content:
+  field_para_color:
+    weight: 2
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+    type: select_or_other_list
+    region: content
+  field_para_penta_icon:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_para_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_para_webform:
+    weight: 3
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

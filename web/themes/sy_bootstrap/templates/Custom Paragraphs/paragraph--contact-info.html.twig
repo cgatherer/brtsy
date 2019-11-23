@@ -1,0 +1,116 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - paragraph.getCreatedTime() will return the paragraph creation timestamp.
+ *   - paragraph.id(): The paragraph ID.
+ *   - paragraph.bundle(): The type of the paragraph, for example, "image" or "text".
+ *   - paragraph.getOwnerId(): The user ID of the paragraph author.
+ *   See Drupal\paragraphs\Entity\Paragraph for a full list of public properties
+ *   and methods for the paragraph object.
+ * - content: All paragraph items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - paragraphs: The current template type (also known as a "theming hook").
+ *   - paragraphs--type-[type]: The current paragraphs type. For example, if the paragraph is an
+ *     "Image" it would result in "paragraphs--type--image". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - paragraphs--view-mode--[view_mode]: The View Mode of the paragraph; for example, a
+ *     preview would result in: "paragraphs--view-mode--preview", and
+ *     default: "paragraphs--view-mode--default".
+ * - view_mode: View mode; for example, "preview" or "full".
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+
+{# Set paragraph classes #}
+{% set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+'col-md-12',
+'col',
+'paragrah--id--' ~ paragraph.id()|clean_class
+] %}
+
+{% block paragraph %}
+
+    <div{{ attributes.addClass(classes) }}>
+
+        <div class="row">
+
+            {% block content %}
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="contact-line">
+
+                        {% if paragraph.field_para_penta_icon.value %}
+                            <i class="sy-icons sy-icon-sm--{{ paragraph.field_para_penta_icon.value }}"></i>
+                        {% endif %}
+
+                        {% if content.field_para_title[0] %}
+                            <span><strong>{{ content.field_para_title[0]|raw }}</strong></span>
+                        {% endif %}
+
+                        </div>
+
+                        {% if content.field_para_contact[0] %}
+                            <div class="contact-line">
+                                <i class="fas fa-user"></i>
+                            <span>{{ content.field_para_contact[0]|raw }}</span>
+                            </div>
+                        {% endif %}
+
+                        {% if content.field_para_company[0] %}
+                            <div class="contact-line">
+                                <i class="fas fa-briefcase"></i>
+                                <span>{{ content.field_para_company[0]|raw }}</span>
+                            </div>
+                        {% endif %}
+
+                        {% if content.field_para_email[0] %}
+                            <div class="contact-line">
+                                <i class="fas fa-paper-plane"></i>
+                                <span><a href="mailto:{{ content.field_para_email[0]|raw }}">{{ content.field_para_email[0]|raw }}</a></span>
+                            </div>
+                        {% endif %}
+
+                        {% if content.field_para_phone[0] %}
+                            <div class="contact-line">
+                                <i class="fas fa-phone"></i>
+                                <span>{{ content.field_para_phone }}</span>
+                            </div>
+                        {% endif %}
+
+
+                    </div>
+
+                </div>
+
+            {% endblock %}
+
+        </div>
+
+    </div>
+
+{% endblock paragraph %}
+

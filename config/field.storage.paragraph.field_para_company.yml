@@ -1,0 +1,21 @@
+uuid: 531c94e1-b998-4e00-9a44-5fca7aa116df
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_para_company
+field_name: field_para_company
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

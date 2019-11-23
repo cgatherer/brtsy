@@ -1,0 +1,73 @@
+uuid: 061a5948-d691-436c-9a57-2b4c239fe8be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_image.field_para_fluid_container
+    - field.field.paragraph.hero_image.field_para_hero_image
+    - field.field.paragraph.hero_image.field_para_icon_link
+    - field.field.paragraph.hero_image.field_para_penta_icon
+    - field.field.paragraph.hero_image.field_para_secondary_color
+    - field.field.paragraph.hero_image.field_para_text
+    - field.field.paragraph.hero_image.field_para_title
+    - paragraphs.paragraphs_type.hero_image
+    - responsive_image.styles.hero
+  module:
+    - entity_reference_revisions
+    - options
+    - responsive_image
+    - text
+id: paragraph.hero_image.default
+targetEntityType: paragraph
+bundle: hero_image
+mode: default
+content:
+  field_para_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: hero
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_para_icon_link:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_para_penta_icon:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_para_secondary_color:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_para_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_para_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_para_fluid_container: true

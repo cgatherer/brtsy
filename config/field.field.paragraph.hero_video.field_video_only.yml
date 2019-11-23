@@ -1,0 +1,23 @@
+uuid: 56701f22-cba6-4d9b-ae6a-ce815f79f57a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_only
+    - paragraphs.paragraphs_type.hero_video
+id: paragraph.hero_video.field_video_only
+field_name: field_video_only
+entity_type: paragraph
+bundle: hero_video
+label: 'Video Only'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

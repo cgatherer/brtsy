@@ -1,0 +1,203 @@
+uuid: 8a594e7d-3bf5-408e-b2f7-c959a0d49298
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.building.body
+    - field.field.node.building.field_address
+    - field.field.node.building.field_building_status
+    - field.field.node.building.field_contact_info
+    - field.field.node.building.field_downloads
+    - field.field.node.building.field_gallery
+    - field.field.node.building.field_geofield
+    - field.field.node.building.field_hero_image
+    - field.field.node.building.field_koz
+    - field.field.node.building.field_lease_types
+    - field.field.node.building.field_location_category
+    - field.field.node.building.field_metatags
+    - field.field.node.building.field_paragraphs
+    - field.field.node.building.field_qualified_opportunity_zone
+    - field.field.node.building.field_weight
+    - image.style.gallery_grid
+    - image.style.max_1300x1300
+    - node.type.building
+    - responsive_image.styles.hero
+  module:
+    - address
+    - address_map_link
+    - colorbox
+    - entity_reference_revisions
+    - file
+    - leaflet
+    - metatag
+    - responsive_image
+    - text
+    - user
+id: node.building.default
+targetEntityType: node
+bundle: building
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_address:
+    type: address_plain
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      address_map_link:
+        link_address: '1'
+        map_link_type: google_maps
+        map_link_position: before
+        map_link_text: 'Google Maps >'
+        map_link_new_window: '1'
+  field_building_status:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_info:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_downloads:
+    weight: 6
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_gallery:
+    weight: 7
+    label: above
+    settings:
+      colorbox_node_style: gallery_grid
+      colorbox_node_style_first: ''
+      colorbox_image_style: max_1300x1300
+      colorbox_gallery: field_page
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    type: colorbox
+    region: content
+  field_geofield:
+    type: leaflet_formatter_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      multiple_map: '0'
+      popup_content: ''
+      leaflet_map: SY-Main
+      height: '200'
+      map_position:
+        zoom: '14'
+        minZoom: '1'
+        maxZoom: '18'
+        force: 0
+      icon:
+        iconUrl: ''
+        shadowUrl: ''
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: ''
+          'y': ''
+        shadowSize:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: ''
+          'y': ''
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+      popup: 0
+      hide_empty_map: 0
+      disable_wheel: 0
+      leaflet_markercluster:
+        control: 0
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+      fullscreen_control: 1
+      reset_map:
+        control: 0
+        position: topright
+    third_party_settings: {  }
+  field_hero_image:
+    weight: 4
+    label: hidden
+    settings:
+      responsive_image_style: hero
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_koz:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_lease_types:
+    weight: 9
+    label: inline
+    settings:
+      link: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_metatags:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_paragraphs:
+    weight: 13
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_qualified_opportunity_zone:
+    weight: 11
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_location_category: true
+  field_weight: true

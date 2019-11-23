@@ -1,0 +1,23 @@
+uuid: 88a00b29-05e7-4636-af93-8a29344a90ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_qualified_opportunity_zone
+    - node.type.building
+id: node.building.field_qualified_opportunity_zone
+field_name: field_qualified_opportunity_zone
+entity_type: node
+bundle: building
+label: 'Qualified Opportunity Zone'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

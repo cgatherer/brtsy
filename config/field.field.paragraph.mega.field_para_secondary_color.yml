@@ -1,0 +1,21 @@
+uuid: 1c76208b-7625-4482-9bf9-c1ded4175bc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_secondary_color
+    - paragraphs.paragraphs_type.mega
+  module:
+    - options
+id: paragraph.mega.field_para_secondary_color
+field_name: field_para_secondary_color
+entity_type: paragraph
+bundle: mega
+label: 'Tint color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: f7970e9f-9592-4043-85dc-d7d977babc02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_location
+    - paragraphs.paragraphs_type.venue
+id: paragraph.venue.field_para_location
+field_name: field_para_location
+entity_type: paragraph
+bundle: venue
+label: 'Location name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

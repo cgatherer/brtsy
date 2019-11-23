@@ -1,0 +1,195 @@
+/* ==========================================
+    @Grid 3 
+=========================================== */
+
+.paragraph--type--grid-3 {
+  .grid-3-inner {
+    &--slide-single {
+      padding: 0px !important;
+      .slide-inner {
+        display: flex;
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center; 
+        .slide-media {
+          &--video {
+            height: 86.7rem;
+            iframe {
+              min-height: 100%;
+              min-width: 100%;
+              object-fit: cover;
+              position: absolute;
+              transform: scale(2.5);
+            }
+          }
+          &--img {
+            max-height: 66.7rem;
+            height: auto;
+          }
+          &--no-media {
+            position:relative;
+            min-height: 64.85rem;
+            display:flex;
+            justify-content:center;
+            overflow:hidden;
+          }
+          .field--name-field-para-hero-image {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow: hidden;
+          }
+          .img-responsive {
+            flex-shrink: 0;
+            min-width: 100% !important;
+            min-height: 100% !important;
+            object-fit: cover;
+          }
+        }
+        .slide-info {
+          width: 100%;
+          text-align: center;
+          &--title {
+            @include H01;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+          }
+          &--body {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto 3rem;
+          }
+          &--link {
+            padding: .75rem 1.75rem;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          &--link-no-bg {
+            @include Paragraph;
+            font-size: 21px !important;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          &--no-media {
+            position:absolute;
+          }
+          .fa-angle-right {
+            padding: 5px 0 0 0;
+          }
+        }
+      }
+    }
+    &--slide-stacked {
+      padding: 0px !important;
+      .slide-top {
+        min-height: 275px;
+        height: 100%;
+        .icon-link {
+          width: 100%;
+          height: 234px;
+          margin: 0 auto;
+          padding: 1rem;
+          border: solid 2px $border-color; 
+          .fontawesome-icon, .sy-icons {
+            margin-top: 10px;
+          }
+        }
+      }
+      .slide-bottom {
+        .icon-link {
+          width: 100%;
+          height: 234px;
+          margin: 0 auto;
+          padding: 1rem;
+          border: solid 2px $border-color;
+          .fontawesome-icon, .sy-icons {
+            margin-top: 10px;
+          }
+        }
+      }
+      .slide-inner {
+        display: flex;
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        .slide-media {
+          &--video {
+            height: 55.1rem; 
+            @media (max-width: 599px) {
+              height: 60vh;
+            }
+            iframe {
+              min-height: 100%;
+              min-width: 100%;
+              object-fit: cover;
+              position: absolute;
+              transform: scale(2.5);
+            }
+          }
+          &--img {
+            height: 35.05rem;
+          }
+          &--no-media {
+            position:relative;
+            display:flex;
+            justify-content:center;
+            overflow:hidden;
+          }
+          .field--name-field-para-hero-image {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow: hidden;
+          }
+          .img-responsive {
+            flex-shrink: 0;
+            min-width: 100% !important;
+            min-height: 100% !important;
+            object-fit: cover;
+          }
+        }
+        .slide-info {
+          width: 100%;
+          text-align: center;
+          &--title {
+            @include H01;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+          }
+          &--body {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto 3rem;
+          }
+          &--link {
+            @include Paragraph;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            padding: .75rem 2rem;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          &--link-no-bg {
+            @include Paragraph;
+            font-size: 21px !important;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          .fa-angle-right {
+            padding: 5px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}

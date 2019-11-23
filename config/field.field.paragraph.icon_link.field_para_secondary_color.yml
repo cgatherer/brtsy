@@ -1,0 +1,21 @@
+uuid: 407670eb-676b-4bb1-8c7e-ba144e83a5f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_secondary_color
+    - paragraphs.paragraphs_type.icon_link
+  module:
+    - options
+id: paragraph.icon_link.field_para_secondary_color
+field_name: field_para_secondary_color
+entity_type: paragraph
+bundle: icon_link
+label: 'Tint color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

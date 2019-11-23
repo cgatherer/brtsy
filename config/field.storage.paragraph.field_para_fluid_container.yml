@@ -1,0 +1,18 @@
+uuid: eb43c526-0f28-40b0-9ec2-06dbc5919dd1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_para_fluid_container
+field_name: field_para_fluid_container
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Default theme implementation of an Instagram image with link.
+ *
+ * Available variables:
+ * - data: The array returned from the Instagram image and path request.
+ * - width: The display width of the image.
+ * - height: The display height of the image.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{{ attach_library('sy_bootstrap/instafeed') }}
+
+{% spaceless %}
+  {% if data %}
+    <ul class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true, "pageDots": true, "autoPlay": 6000 }'>
+      {% for item in data %}
+      <div class="gallery-cell">
+    	  <a target="_blank" data-instagram-rel="1" href="{{ item.path }}">
+    	    <img alt="instagram" height="{{ height }}" width="{{ width }}" src="{{ item.image }}">
+    	  </a>
+      </div>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endspaceless %}

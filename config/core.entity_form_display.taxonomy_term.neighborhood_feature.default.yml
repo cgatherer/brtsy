@@ -1,0 +1,44 @@
+uuid: cf07b010-8ba7-426d-acb6-fb2ce106b75d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.neighborhood_feature.field_penta_icon
+    - taxonomy.vocabulary.neighborhood_feature
+  module:
+    - path
+    - text
+id: taxonomy_term.neighborhood_feature.default
+targetEntityType: taxonomy_term
+bundle: neighborhood_feature
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_penta_icon:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

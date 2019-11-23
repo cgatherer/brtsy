@@ -1,0 +1,21 @@
+uuid: cfa8f273-84f9-45c2-96a8-9e311bc2c58d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_background_color
+    - paragraphs.paragraphs_type.mega_link_block
+  module:
+    - options
+id: paragraph.mega_link_block.field_para_background_color
+field_name: field_para_background_color
+entity_type: paragraph
+bundle: mega_link_block
+label: 'Background color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

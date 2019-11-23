@@ -1,0 +1,79 @@
+uuid: ba7d8633-23ca-4c57-84fc-cedb47e71601
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_contacts
+    - paragraphs.paragraphs_type.contact_info
+    - paragraphs.paragraphs_type.text_with_sidebar
+  module:
+    - entity_reference_revisions
+id: paragraph.text_with_sidebar.field_para_contacts
+field_name: field_para_contacts
+entity_type: paragraph
+bundle: text_with_sidebar
+label: Contacts
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contact_info: contact_info
+    target_bundles_drag_drop:
+      text_with_sidebar:
+        weight: 18
+        enabled: false
+      block:
+        weight: 19
+        enabled: false
+      carousel:
+        weight: 20
+        enabled: false
+      column_2:
+        weight: 21
+        enabled: false
+      contact_info:
+        enabled: true
+        weight: 22
+      grid_3:
+        weight: 23
+        enabled: false
+      hero_image:
+        weight: 24
+        enabled: false
+      hero_video:
+        weight: 25
+        enabled: false
+      icon_link:
+        weight: 26
+        enabled: false
+      mega:
+        weight: 27
+        enabled: false
+      mega_link_block:
+        weight: 28
+        enabled: false
+      news_nearby:
+        weight: 29
+        enabled: false
+      slide:
+        weight: 30
+        enabled: false
+      text_area:
+        weight: 31
+        enabled: false
+      venue:
+        weight: 32
+        enabled: false
+      view:
+        weight: 33
+        enabled: false
+      webform:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,27 @@
+uuid: 5f867edf-2df7-4a82-ba31-5095937e97cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_downloads
+    - paragraphs.paragraphs_type.text_with_sidebar
+  module:
+    - file
+id: paragraph.text_with_sidebar.field_para_downloads
+field_name: field_para_downloads
+entity_type: paragraph
+bundle: text_with_sidebar
+label: Downloads
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'downloads/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf ppt pptx doc docx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
